@@ -294,7 +294,7 @@ const EcomAgentDashboard: React.FC = () => {
                         <p className="whitespace-pre-wrap">{msg.message}</p>
                         {msg.sources && msg.sources.length > 0 && (
                           <div className="mt-3 pt-3 border-t border-gray-700/50">
-                            <p className="text-xs font-semibold text-gray-400 mb-1">📚 Sources Used:</p>
+                            <p className="text-xs font-semibold text-gray-400 mb-1">Sources Used:</p>
                             <div className="flex flex-wrap gap-2">
                               {msg.sources.map((source, i) => (
                                 <span key={i} className="text-xs bg-gray-700/50 px-2 py-1 rounded">
