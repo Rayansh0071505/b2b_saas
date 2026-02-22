@@ -402,16 +402,242 @@ const EmailDashboard: React.FC = () => {
           )}
 
           {activeView === 'train' && (
-            <div className="flex-1 p-8 flex items-center justify-center">
-              <div className="text-center">
-                <Brain className="w-24 h-24 mx-auto mb-6 text-blue-500 opacity-50" />
-                <h2 className="text-2xl font-bold mb-3">Train Your Customer Bot</h2>
-                <p className="text-gray-400 mb-6 max-w-md">
-                  This feature allows you to customize AI responses based on your brand voice and policies.
-                </p>
-                <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-medium transition-all">
-                  Coming Soon
+            <div className="flex-1 flex flex-col overflow-hidden">
+              {/* Train View Header */}
+              <div className="bg-gray-800/50 border-b border-gray-700/50 p-6">
+                <h2 className="text-2xl font-bold mb-2">Train Your Saturnin Bot</h2>
+                <p className="text-gray-400">Customize your AI assistant with knowledge, behavior, and tools</p>
+              </div>
+
+              {/* Train Navigation Tabs */}
+              <div className="flex gap-2 bg-gray-800/30 border-b border-gray-700/50 p-4">
+                <button
+                  onClick={() => setTrainView('knowledge')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                    trainView === 'knowledge'
+                      ? 'bg-blue-500 text-white'
+                      : 'bg-gray-700/50 text-gray-300 hover:bg-gray-700'
+                  }`}
+                >
+                  <Book className="w-4 h-4" />
+                  Knowledge Base
                 </button>
+                <button
+                  onClick={() => setTrainView('instructions')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                    trainView === 'instructions'
+                      ? 'bg-blue-500 text-white'
+                      : 'bg-gray-700/50 text-gray-300 hover:bg-gray-700'
+                  }`}
+                >
+                  <Settings className="w-4 h-4" />
+                  Bot Behavior
+                </button>
+                <button
+                  onClick={() => setTrainView('connectors')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                    trainView === 'connectors'
+                      ? 'bg-blue-500 text-white'
+                      : 'bg-gray-700/50 text-gray-300 hover:bg-gray-700'
+                  }`}
+                >
+                  <Plug className="w-4 h-4" />
+                  Tools & Connectors
+                </button>
+              </div>
+
+              {/* Train Content */}
+              <div className="flex-1 overflow-y-auto p-6">
+                {/* Knowledge Base View */}
+                {trainView === 'knowledge' && (
+                  <div className="max-w-4xl mx-auto">
+                    <div className="bg-gray-800/50 rounded-lg p-6 border border-gray-700/50 mb-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <div>
+                          <h3 className="text-lg font-semibold mb-2">Knowledge Base</h3>
+                          <p className="text-sm text-gray-400">
+                            Add information about your company, policies, and common questions. 
+                            The AI will use this to answer customer queries.
+                          </p>
+                        </div>
+                        <button
+                          onClick={saveKnowledgeBase}
+                          disabled={saveStatus === 'saving'}
+                          className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                            saveStatus === 'saved'
+                              ? 'bg-green-500 text-white'
+                              : saveStatus === 'error'
+                              ? 'bg-red-500 text-white'
+                              : 'bg-blue-500 hover:bg-blue-600 text-white'
+                          }`}
+                        >
+                          {saveStatus === 'saved' ? (
+                            <><CheckCircle className="w-4 h-4" /> Saved</>
+                          ) : saveStatus === 'error' ? (
+                            <><XCircle className="w-4 h-4" /> Error</>
+                          ) : (
+                            <><Save className="w-4 h-4" /> Save</>
+                          )}
+                        </button>
+                      </div>
+                      <textarea
+                        value={knowledgeBase}
+                        onChange={(e) => setKnowledgeBase(e.target.value)}
+                        className="w-full h-80 bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-gray-200 focus:outline-none focus:border-blue-500 resize-none font-mono text-sm"
+                        placeholder="Enter your knowledge base content here..."
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Bot Instructions View */}
+                {trainView === 'instructions' && (
+                  <div className="max-w-4xl mx-auto">
+                    <div className="bg-gray-800/50 rounded-lg p-6 border border-gray-700/50 mb-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <div>
+                          <h3 className="text-lg font-semibold mb-2">Bot Behavior & Instructions</h3>
+                          <p className="text-sm text-gray-400">
+                            Define how your AI assistant should behave, its tone, and response guidelines.
+                          </p>
+                        </div>
+                        <button
+                          onClick={saveBotInstructions}
+                          disabled={saveStatus === 'saving'}
+                          className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                            saveStatus === 'saved'
+                              ? 'bg-green-500 text-white'
+                              : saveStatus === 'error'
+                              ? 'bg-red-500 text-white'
+                              : 'bg-blue-500 hover:bg-blue-600 text-white'
+                          }`}
+                        >
+                          {saveStatus === 'saved' ? (
+                            <><CheckCircle className="w-4 h-4" /> Saved</>
+                          ) : saveStatus === 'error' ? (
+                            <><XCircle className="w-4 h-4" /> Error</>
+                          ) : (
+                            <><Save className="w-4 h-4" /> Save</>
+                          )}
+                        </button>
+                      </div>
+                      <textarea
+                        value={botInstructions}
+                        onChange={(e) => setBotInstructions(e.target.value)}
+                        className="w-full h-96 bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-gray-200 focus:outline-none focus:border-blue-500 resize-none font-mono text-sm"
+                        placeholder="Enter bot behavior instructions..."
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Connectors View */}
+                {trainView === 'connectors' && (
+                  <div className="max-w-5xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                      {connectors.map((connector, index) => (
+                        <div
+                          key={index}
+                          className="bg-gray-800/50 rounded-lg p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all"
+                        >
+                          <div className="flex items-start justify-between mb-4">
+                            <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                              {connector.type === 'product.json' && <Package className="w-6 h-6 text-blue-400" />}
+                              {connector.type === 'shopify_demo.json' && <ShoppingCart className="w-6 h-6 text-green-400" />}
+                              {connector.type === 'dhl_demo.json' && <Truck className="w-6 h-6 text-orange-400" />}
+                            </div>
+                            <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                              connector.status === 'connected'
+                                ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                                : 'bg-gray-500/20 text-gray-400 border border-gray-500/30'
+                            }`}>
+                              {connector.status}
+                            </span>
+                          </div>
+                          <h3 className="font-semibold mb-2">{connector.name}</h3>
+                          <p className="text-sm text-gray-400 mb-4">{connector.type}</p>
+                          <div className="text-xs text-gray-500">
+                            {connector.records} records available
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Test Chat Interface */}
+                    <div className="bg-gray-800/50 rounded-lg border border-gray-700/50 overflow-hidden">
+                      <div className="bg-gray-800/70 p-4 border-b border-gray-700/50">
+                        <h3 className="font-semibold flex items-center gap-2">
+                          <MessageSquare className="w-5 h-5 text-blue-400" />
+                          Test Your Bot
+                        </h3>
+                        <p className="text-xs text-gray-400 mt-1">
+                          Try asking about orders, tracking, or products
+                        </p>
+                      </div>
+                      
+                      {/* Chat Messages */}
+                      <div className="h-96 overflow-y-auto p-4 space-y-4">
+                        {chatHistory.length === 0 ? (
+                          <div className="text-center text-gray-500 mt-8">
+                            <Brain className="w-12 h-12 mx-auto mb-3 opacity-50" />
+                            <p className="text-sm">Start a conversation to test your bot</p>
+                            <p className="text-xs mt-2">Try: "What's the status of order ORD-2024-001?"</p>
+                          </div>
+                        ) : (
+                          chatHistory.map((msg, idx) => (
+                            <div
+                              key={idx}
+                              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                            >
+                              <div
+                                className={`max-w-[80%] rounded-lg p-3 ${
+                                  msg.role === 'user'
+                                    ? 'bg-blue-500 text-white'
+                                    : 'bg-gray-700/50 text-gray-200'
+                                }`}
+                              >
+                                <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
+                              </div>
+                            </div>
+                          ))
+                        )}
+                        {isChatting && (
+                          <div className="flex justify-start">
+                            <div className="bg-gray-700/50 rounded-lg p-3">
+                              <div className="flex gap-1">
+                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
+                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
+                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Chat Input */}
+                      <div className="p-4 border-t border-gray-700/50">
+                        <div className="flex gap-2">
+                          <input
+                            type="text"
+                            value={chatMessage}
+                            onChange={(e) => setChatMessage(e.target.value)}
+                            onKeyPress={(e) => e.key === 'Enter' && sendChatMessage()}
+                            placeholder="Ask about orders, tracking, or products..."
+                            className="flex-1 bg-gray-900/50 border border-gray-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            disabled={isChatting}
+                          />
+                          <button
+                            onClick={sendChatMessage}
+                            disabled={isChatting || !chatMessage.trim()}
+                            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg font-medium transition-all"
+                          >
+                            <Send className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}
