@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.routes import sentiment_router
 from backend.bot_routes import bot_router
+from backend.ecom_agent_routes import ecom_agent_router
 
 app = FastAPI(title="Saturnin AI Platform API")
 
@@ -17,6 +18,7 @@ app.add_middleware(
 # Include routers with /api prefix
 app.include_router(sentiment_router, prefix="/api")
 app.include_router(bot_router, prefix="/api")
+app.include_router(ecom_agent_router, prefix="/api")
 
 @app.get("/")
 async def root():
@@ -28,7 +30,8 @@ async def root():
             "sentiment": "/api/companies, /api/report/*, /api/reviews",
             "bot_training": "/api/bot/knowledge-base, /api/bot/instructions",
             "bot_chat": "/api/bot/chat",
-            "connectors": "/api/bot/connectors/*"
+            "connectors": "/api/bot/connectors/*",
+            "ecom_agent": "/api/ecom-agent/chat, /api/ecom-agent/connectors, /api/ecom-agent/analytics"
         }
     }
 
@@ -42,7 +45,8 @@ async def api_root():
             "sentiment": "/api/companies, /api/report/*, /api/reviews",
             "bot_training": "/api/bot/knowledge-base, /api/bot/instructions",
             "bot_chat": "/api/bot/chat",
-            "connectors": "/api/bot/connectors/*"
+            "connectors": "/api/bot/connectors/*",
+            "ecom_agent": "/api/ecom-agent/chat, /api/ecom-agent/connectors, /api/ecom-agent/analytics"
         }
     }
 
