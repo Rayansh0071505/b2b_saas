@@ -17,8 +17,10 @@ import {
   Brain,
   CheckCircle,
   XCircle,
-  Sparkles
+  Sparkles,
+  BarChart3
 } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { API_BASE_URL } from '../config';
 
 interface Connector {
@@ -29,13 +31,18 @@ interface Connector {
   description: string;
 }
 
+interface ChartData {
+  type: string;
+  data: any[];
+}
+
 const EcomAgentDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'knowledge' | 'connectors' | 'chat'>('connectors');
   const [knowledgeBase, setKnowledgeBase] = useState<string>('');
   const [connectors, setConnectors] = useState<Connector[]>([]);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
   const [chatMessage, setChatMessage] = useState<string>('');
-  const [chatHistory, setChatHistory] = useState<Array<{role: string, message: string, sources?: string[]}>>([]);
+  const [chatHistory, setChatHistory] = useState<Array<{role: string, message: string, sources?: string[], chartData?: ChartData}>>([]);
   const [isChatting, setIsChatting] = useState<boolean>(false);
 
   useEffect(() => {
@@ -92,7 +99,7 @@ const EcomAgentDashboard: React.FC = () => {
         role: 'bot', 
         message: cleanedResponse,
         sources: response.data.sources,
-        hasData: response.data.data_context_size > 1000 // Flag for potential chart data
+        chartData: response.data.chart_data
       }]);
     } catch (error) {
       console.error('Error chatting with ecom agent:', error);
