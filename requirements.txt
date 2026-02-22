@@ -10,3 +10,10 @@ python-dotenv==1.0.1
 # Uncomment these if you want to use MongoDB backend
 # motor==3.6.0
 # pymongo==4.10.1
+langchain==1.2.10
+langchain-classic==1.0.1
+langchain-community==0.4.1
+langchain-core==1.2.14
+langchain-openai==1.1.10
+langchain-text-splitters==1.1.1
+openai==2.21.0
