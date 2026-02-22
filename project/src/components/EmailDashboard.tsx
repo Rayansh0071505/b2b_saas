@@ -12,7 +12,17 @@ import {
   User,
   Clock,
   CheckCircle2,
-  Circle
+  Circle,
+  Book,
+  Settings,
+  Plug,
+  ShoppingCart,
+  Truck,
+  Package,
+  Save,
+  MessageSquare,
+  CheckCircle,
+  XCircle
 } from 'lucide-react';
 import { API_BASE_URL } from '../config';
 
