@@ -229,6 +229,37 @@ async def chat_with_ecom_agent(chat: EcomChatMessage):
         # Create context from query
         context, sources_used = create_context_from_query(chat.message, data_sources)
         
+        # Extract metrics for visualization
+        chart_data = None
+        query_lower = chat.message.lower()
+        
+        # If asking about ads performance, prepare chart data
+        if any(word in query_lower for word in ['performance', 'roas', 'spend', 'revenue', 'ads', 'campaign']):
+            chart_data = {
+                "type": "comparison",
+                "data": []
+            }
+            
+            # Add Meta Ads data
+            if 'Meta Ads' in sources_used:
+                meta_perf = data_sources.get('meta_ads', {}).get('overall_performance', {})
+                chart_data["data"].append({
+                    "platform": "Meta Ads",
+                    "spend": meta_perf.get('total_spend', 0),
+                    "revenue": meta_perf.get('total_revenue', 0),
+                    "roas": float(meta_perf.get('overall_roas', 0))
+                })
+            
+            # Add Google Ads data
+            if 'Google Ads' in sources_used:
+                google_perf = data_sources.get('google_ads', {}).get('overall_performance', {})
+                chart_data["data"].append({
+                    "platform": "Google Ads",
+                    "spend": google_perf.get('total_spend', 0),
+                    "revenue": google_perf.get('total_revenue', 0),
+                    "roas": float(google_perf.get('overall_roas', 0))
+                })
+        
         # Create system message with context
         system_message = f"""You are an expert E-commerce AI Assistant for Saturnin.
 
@@ -246,6 +277,7 @@ Your role:
 3. Provide actionable insights and recommendations
 4. Be concise but comprehensive
 5. Always cite specific data points when making statements
+6. DO NOT use markdown bold formatting (no ** symbols)
 
 Context from connected data sources:
 {context}
@@ -272,7 +304,8 @@ Remember: Always base your answers on the actual data provided above."""
             "response": response + citation_text,
             "sources": sources_used,
             "model": "gpt-4o-mini",
-            "data_context_size": len(context)
+            "data_context_size": len(context),
+            "chart_data": chart_data
         }
         
     except Exception as e:
