@@ -72,7 +72,10 @@ const EmailDashboard: React.FC = () => {
 
   useEffect(() => {
     fetchEmails();
-  }, []);
+    if (activeView === 'train') {
+      fetchBotConfig();
+    }
+  }, [activeView]);
 
   const fetchEmails = async () => {
     try {
@@ -81,6 +84,74 @@ const EmailDashboard: React.FC = () => {
       setStats(response.data.email_statistics);
     } catch (error) {
       console.error('Error fetching emails:', error);
+    }
+  };
+
+  const fetchBotConfig = async () => {
+    try {
+      const [kbRes, instRes, connRes] = await Promise.all([
+        axios.get(`${API_BASE_URL}/bot/knowledge-base`),
+        axios.get(`${API_BASE_URL}/bot/instructions`),
+        axios.get(`${API_BASE_URL}/bot/connectors/status`)
+      ]);
+      
+      setKnowledgeBase(kbRes.data.knowledge_base);
+      setBotInstructions(instRes.data.instructions);
+      setConnectors(connRes.data.connectors);
+    } catch (error) {
+      console.error('Error fetching bot config:', error);
+    }
+  };
+
+  const saveKnowledgeBase = async () => {
+    setSaveStatus('saving');
+    try {
+      await axios.post(`${API_BASE_URL}/bot/knowledge-base`, { content: knowledgeBase });
+      setSaveStatus('saved');
+      setTimeout(() => setSaveStatus('idle'), 2000);
+    } catch (error) {
+      console.error('Error saving knowledge base:', error);
+      setSaveStatus('error');
+      setTimeout(() => setSaveStatus('idle'), 2000);
+    }
+  };
+
+  const saveBotInstructions = async () => {
+    setSaveStatus('saving');
+    try {
+      await axios.post(`${API_BASE_URL}/bot/instructions`, { instructions: botInstructions });
+      setSaveStatus('saved');
+      setTimeout(() => setSaveStatus('idle'), 2000);
+    } catch (error) {
+      console.error('Error saving instructions:', error);
+      setSaveStatus('error');
+      setTimeout(() => setSaveStatus('idle'), 2000);
+    }
+  };
+
+  const sendChatMessage = async () => {
+    if (!chatMessage.trim()) return;
+    
+    setIsChatting(true);
+    const userMsg = chatMessage;
+    setChatMessage('');
+    
+    // Add user message to history
+    const newHistory = [...chatHistory, { role: 'user', message: userMsg }];
+    setChatHistory(newHistory);
+    
+    try {
+      const response = await axios.post(`${API_BASE_URL}/bot/chat`, {
+        message: userMsg,
+        conversation_history: newHistory
+      });
+      
+      setChatHistory([...newHistory, { role: 'bot', message: response.data.response }]);
+    } catch (error) {
+      console.error('Error chatting with bot:', error);
+      setChatHistory([...newHistory, { role: 'bot', message: 'Sorry, I encountered an error. Please try again.' }]);
+    } finally {
+      setIsChatting(false);
     }
   };
 
