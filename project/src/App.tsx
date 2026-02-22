@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Dashboard from './components/Dashboard';
 import EmailDashboard from './components/EmailDashboard';
+import QualitativeDashboard from './components/QualitativeDashboard';
 import EcomAgentDashboard from './components/EcomAgentDashboard';
-import { BarChart3, Mail, ShoppingBag } from 'lucide-react';
+import { BarChart3, Mail, Activity, ShoppingBag } from 'lucide-react';
 
 function App() {
-  const [activeDashboard, setActiveDashboard] = useState<'sentiment' | 'email' | 'ecom-agent'>('sentiment');
+  const [activeDashboard, setActiveDashboard] = useState<'sentiment' | 'email' | 'qualitative' | 'ecom-agent'>('sentiment');
 
   return (
     <>
@@ -23,7 +24,7 @@ function App() {
           }`}
         >
           <BarChart3 className="w-4 h-4" />
-          <span>Sentiment Dashboard</span>
+          <span>Sentiment</span>
         </button>
         <button
           onClick={() => setActiveDashboard('email')}
@@ -34,7 +35,18 @@ function App() {
           }`}
         >
           <Mail className="w-4 h-4" />
-          <span>Email Dashboard</span>
+          <span>Email</span>
+        </button>
+        <button
+          onClick={() => setActiveDashboard('qualitative')}
+          className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+            activeDashboard === 'qualitative'
+              ? 'bg-blue-500 text-white shadow-lg'
+              : 'text-gray-300 hover:bg-gray-700/50'
+          }`}
+        >
+          <Activity className="w-4 h-4" />
+          <span>Qualitative</span>
         </button>
         <button
           onClick={() => setActiveDashboard('ecom-agent')}
@@ -54,6 +66,8 @@ function App() {
         <Dashboard />
       ) : activeDashboard === 'email' ? (
         <EmailDashboard />
+      ) : activeDashboard === 'qualitative' ? (
+        <QualitativeDashboard />
       ) : (
         <EcomAgentDashboard />
       )}
