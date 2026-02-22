@@ -14,16 +14,17 @@ logger = logging.getLogger(__name__)
 
 ecom_agent_router = APIRouter()
 
-# OpenAI API key from environment
+# OpenAI API key and base URL for Emergent integration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-emergent-e6cC403A7332fC34cA")
-OPENAI_BASE_URL = os.getenv("INTEGRATION_PROXY_URL", "https://integrations.emergentagent.com") + "/openai/v1"
+# Use Emergent's integration proxy
+INTEGRATION_PROXY_URL = os.getenv("INTEGRATION_PROXY_URL", "https://integrations.emergentagent.com")
 
-# Initialize LangChain LLM
+# Initialize LangChain LLM with Emergent proxy
 llm = ChatOpenAI(
     model="gpt-4o-mini",
     temperature=0.3,
     api_key=OPENAI_API_KEY,
-    base_url=OPENAI_BASE_URL
+    base_url=f"{INTEGRATION_PROXY_URL}/openai/v1"
 )
 
 # Load all data sources
