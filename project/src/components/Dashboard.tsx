@@ -2461,7 +2461,7 @@ const StatsOverview = ({ overallData }: { overallData: OverallReport }) => {
       <header className="mb-8 flex items-center justify-between">
 
           <h1 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Peak by Everest
+            Saturnin
           </h1>
           <p className="text-gray-400">Real-time customer feedback analysis</p>
         </header>
