@@ -1,0 +1,111 @@
+{
+  "website_overview": {
+    "total_users": 45678,
+    "total_sessions": 89234,
+    "bounce_rate": "42.3%",
+    "avg_session_duration": "3m 24s",
+    "pages_per_session": 4.2,
+    "new_users": 32145,
+    "returning_users": 13533
+  },
+  "traffic_sources": [
+    {
+      "source": "Organic Search",
+      "users": 18234,
+      "sessions": 34567,
+      "bounce_rate": "38.2%",
+      "conversion_rate": "3.8%"
+    },
+    {
+      "source": "Direct",
+      "users": 12456,
+      "sessions": 23456,
+      "bounce_rate": "35.6%",
+      "conversion_rate": "4.2%"
+    },
+    {
+      "source": "Social Media",
+      "users": 8901,
+      "sessions": 16789,
+      "bounce_rate": "52.1%",
+      "conversion_rate": "2.1%"
+    },
+    {
+      "source": "Paid Search",
+      "users": 4567,
+      "sessions": 9876,
+      "bounce_rate": "41.3%",
+      "conversion_rate": "5.2%"
+    },
+    {
+      "source": "Referral",
+      "users": 1520,
+      "sessions": 4546,
+      "bounce_rate": "45.8%",
+      "conversion_rate": "2.9%"
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "/products/fitness-watch",
+      "pageviews": 23456,
+      "unique_pageviews": 18234,
+      "avg_time_on_page": "2m 45s",
+      "bounce_rate": "32.1%"
+    },
+    {
+      "page": "/products/wireless-headphones",
+      "pageviews": 19876,
+      "unique_pageviews": 15678,
+      "avg_time_on_page": "2m 12s",
+      "bounce_rate": "35.4%"
+    },
+    {
+      "page": "/",
+      "pageviews": 45678,
+      "unique_pageviews": 32145,
+      "avg_time_on_page": "1m 34s",
+      "bounce_rate": "48.9%"
+    },
+    {
+      "page": "/cart",
+      "pageviews": 8901,
+      "unique_pageviews": 7234,
+      "avg_time_on_page": "1m 56s",
+      "bounce_rate": "62.3%"
+    }
+  ],
+  "conversions": {
+    "goal_completions": 1876,
+    "goal_value": 248950,
+    "ecommerce_transactions": 456,
+    "ecommerce_revenue": 87654,
+    "avg_order_value": 192.21,
+    "conversion_rate": "3.4%"
+  },
+  "demographics": {
+    "age_groups": [
+      {"range": "18-24", "percentage": 18.5},
+      {"range": "25-34", "percentage": 35.2},
+      {"range": "35-44", "percentage": 24.8},
+      {"range": "45-54", "percentage": 14.3},
+      {"range": "55+", "percentage": 7.2}
+    ],
+    "gender": {
+      "male": 52.3,
+      "female": 47.7
+    }
+  },
+  "device_category": [
+    {"device": "Mobile", "sessions": 48567, "percentage": 54.4},
+    {"device": "Desktop", "sessions": 32145, "percentage": 36.0},
+    {"device": "Tablet", "sessions": 8522, "percentage": 9.6}
+  ],
+  "top_countries": [
+    {"country": "United States", "users": 32145, "sessions": 56789},
+    {"country": "Canada", "users": 5678, "sessions": 10234},
+    {"country": "United Kingdom", "users": 4321, "sessions": 8901},
+    {"country": "Australia", "users": 2345, "sessions": 5678},
+    {"country": "Germany", "users": 1189, "sessions": 2632}
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "store_info": {
+    "store_name": "Saturnin Store",
+    "platform": "WooCommerce",
+    "currency": "USD",
+    "timezone": "America/New_York"
+  },
+  "orders": [
+    {
+      "order_id": "WC-5678",
+      "order_number": "WC-2024-001",
+      "order_date": "2024-02-20T14:23:00Z",
+      "status": "completed",
+      "customer": {
+        "id": "CUST-1234",
+        "name": "Robert Williams",
+        "email": "r.williams@example.com",
+        "phone": "+1-555-0987"
+      },
+      "items": [
+        {
+          "product_id": "PROD-004",
+          "product_name": "4K Ultra HD Webcam",
+          "sku": "WEB-4K-001",
+          "quantity": 1,
+          "price": 129.99,
+          "total": 129.99
+        },
+        {
+          "product_id": "PROD-006",
+          "product_name": "Portable Phone Charger 20000mAh",
+          "sku": "CHG-20K-001",
+          "quantity": 1,
+          "price": 39.99,
+          "total": 39.99
+        }
+      ],
+      "subtotal": 169.98,
+      "tax": 14.45,
+      "shipping": 8.99,
+      "total": 193.42,
+      "payment_method": "Credit Card",
+      "shipping_address": {
+        "street": "567 Broadway",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02101",
+        "country": "USA"
+      }
+    },
+    {
+      "order_id": "WC-5679",
+      "order_number": "WC-2024-002",
+      "order_date": "2024-02-21T09:45:00Z",
+      "status": "processing",
+      "customer": {
+        "id": "CUST-1235",
+        "name": "Lisa Anderson",
+        "email": "l.anderson@example.com",
+        "phone": "+1-555-0654"
+      },
+      "items": [
+        {
+          "product_id": "PROD-002",
+          "product_name": "Smart Fitness Watch",
+          "sku": "FIT-WATCH-001",
+          "quantity": 2,
+          "price": 199.99,
+          "total": 399.98
+        }
+      ],
+      "subtotal": 399.98,
+      "tax": 34.00,
+      "shipping": 15.99,
+      "total": 449.97,
+      "payment_method": "PayPal",
+      "shipping_address": {
+        "street": "890 Lake Drive",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33101",
+        "country": "USA"
+      }
+    },
+    {
+      "order_id": "WC-5680",
+      "order_number": "WC-2024-003",
+      "order_date": "2024-02-22T16:20:00Z",
+      "status": "completed",
+      "customer": {
+        "id": "CUST-1236",
+        "name": "David Martinez",
+        "email": "d.martinez@example.com",
+        "phone": "+1-555-0321"
+      },
+      "items": [
+        {
+          "product_id": "PROD-005",
+          "product_name": "Organic Green Tea Set",
+          "sku": "TEA-ORG-001",
+          "quantity": 5,
+          "price": 24.99,
+          "total": 124.95
+        }
+      ],
+      "subtotal": 124.95,
+      "tax": 10.62,
+      "shipping": 4.99,
+      "total": 140.56,
+      "payment_method": "Credit Card",
+      "shipping_address": {
+        "street": "234 Mountain View",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80201",
+        "country": "USA"
+      }
+    }
+  ],
+  "products": [
+    {
+      "product_id": "PROD-001",
+      "name": "Wireless Bluetooth Headphones",
+      "sku": "HEAD-BT-001",
+      "price": 79.99,
+      "stock_quantity": 150,
+      "stock_status": "in_stock",
+      "total_sales": 342
+    },
+    {
+      "product_id": "PROD-002",
+      "name": "Smart Fitness Watch",
+      "sku": "FIT-WATCH-001",
+      "price": 199.99,
+      "stock_quantity": 89,
+      "stock_status": "in_stock",
+      "total_sales": 156
+    },
+    {
+      "product_id": "PROD-003",
+      "name": "Ergonomic Office Chair",
+      "sku": "CHAIR-ERG-001",
+      "price": 299.99,
+      "stock_quantity": 45,
+      "stock_status": "in_stock",
+      "total_sales": 87
+    },
+    {
+      "product_id": "PROD-004",
+      "name": "4K Ultra HD Webcam",
+      "sku": "WEB-4K-001",
+      "price": 129.99,
+      "stock_quantity": 200,
+      "stock_status": "in_stock",
+      "total_sales": 234
+    },
+    {
+      "product_id": "PROD-005",
+      "name": "Organic Green Tea Set",
+      "sku": "TEA-ORG-001",
+      "price": 24.99,
+      "stock_quantity": 320,
+      "stock_status": "in_stock",
+      "total_sales": 567
+    },
+    {
+      "product_id": "PROD-006",
+      "name": "Portable Phone Charger 20000mAh",
+      "sku": "CHG-20K-001",
+      "price": 39.99,
+      "stock_quantity": 175,
+      "stock_status": "in_stock",
+      "total_sales": 423
+    }
+  ],
+  "customers": [
+    {
+      "customer_id": "CUST-1234",
+      "name": "Robert Williams",
+      "email": "r.williams@example.com",
+      "total_orders": 3,
+      "total_spent": 456.78,
+      "registration_date": "2024-01-15"
+    },
+    {
+      "customer_id": "CUST-1235",
+      "name": "Lisa Anderson",
+      "email": "l.anderson@example.com",
+      "total_orders": 2,
+      "total_spent": 678.90,
+      "registration_date": "2024-02-01"
+    },
+    {
+      "customer_id": "CUST-1236",
+      "name": "David Martinez",
+      "email": "d.martinez@example.com",
+      "total_orders": 1,
+      "total_spent": 140.56,
+      "registration_date": "2024-02-20"
+    }
+  ],
+  "analytics": {
+    "total_revenue": 783.95,
+    "total_orders": 3,
+    "avg_order_value": 261.32,
+    "total_customers": 3,
+    "total_products": 6,
+    "low_stock_products": 0
+  }
+}

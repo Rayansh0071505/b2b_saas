@@ -1,0 +1,102 @@
+{
+  "campaigns": [
+    {
+      "campaign_id": "PIN-2024-001",
+      "campaign_name": "Spring Home Decor Collection",
+      "status": "active",
+      "start_date": "2024-02-01",
+      "end_date": "2024-03-31",
+      "budget": {
+        "total": 8000,
+        "daily": 133,
+        "spent": 4200,
+        "remaining": 3800
+      },
+      "objective": "conversions",
+      "targeting": {
+        "interests": ["Home Decor", "Interior Design", "DIY Projects"],
+        "age_range": "25-54",
+        "gender": "all"
+      },
+      "performance": {
+        "impressions": 456789,
+        "clicks": 8901,
+        "ctr": "1.95%",
+        "saves": 2345,
+        "conversions": 142,
+        "conversion_rate": "1.60%",
+        "cost_per_click": "$0.47",
+        "cost_per_conversion": "$29.58",
+        "revenue": 18976,
+        "roas": "4.5"
+      },
+      "top_pins": [
+        {
+          "pin_id": "PIN-001",
+          "title": "Modern Living Room Ideas",
+          "impressions": 123456,
+          "saves": 892,
+          "clicks": 3421
+        },
+        {
+          "pin_id": "PIN-002",
+          "title": "Minimalist Bedroom Setup",
+          "impressions": 98765,
+          "saves": 745,
+          "clicks": 2567
+        }
+      ]
+    },
+    {
+      "campaign_id": "PIN-2024-002",
+      "campaign_name": "Fitness Products - Awareness",
+      "status": "active",
+      "start_date": "2024-01-15",
+      "end_date": "2024-04-15",
+      "budget": {
+        "total": 12000,
+        "daily": 133,
+        "spent": 7800,
+        "remaining": 4200
+      },
+      "objective": "awareness",
+      "targeting": {
+        "interests": ["Fitness", "Health & Wellness", "Workout Routines"],
+        "age_range": "18-45",
+        "gender": "all"
+      },
+      "performance": {
+        "impressions": 892345,
+        "clicks": 12456,
+        "ctr": "1.40%",
+        "saves": 4567,
+        "conversions": 89,
+        "conversion_rate": "0.71%",
+        "cost_per_click": "$0.63",
+        "cost_per_conversion": "$87.64",
+        "revenue": 12450,
+        "roas": "1.6"
+      },
+      "top_pins": [
+        {
+          "pin_id": "PIN-003",
+          "title": "Home Workout Essentials",
+          "impressions": 234567,
+          "saves": 1892,
+          "clicks": 4567
+        }
+      ]
+    }
+  ],
+  "overall_performance": {
+    "total_spend": 12000,
+    "total_revenue": 31426,
+    "overall_roas": "2.6",
+    "total_conversions": 231,
+    "avg_conversion_rate": "1.16%",
+    "total_impressions": 1349134,
+    "total_clicks": 21357,
+    "avg_ctr": "1.58%",
+    "total_saves": 6912
+  }
+}
