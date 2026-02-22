@@ -80,29 +80,40 @@ def create_context_from_query(query: str, data_sources: dict) -> tuple[str, List
     context_parts = []
     sources_used = []
     
+    # Mapping of file names to clean connector names
+    source_name_map = {
+        "product.json": "Product Catalog",
+        "shopify_demo.json": "Shopify Orders",
+        "dhl_demo.json": "DHL Tracking",
+        "strategies.json": "Marketing Strategies",
+        "meta_ads.json": "Meta Ads",
+        "google_ads.json": "Google Ads",
+        "knowledge_base": "Knowledge Base"
+    }
+    
     # Check for product queries
     if any(word in query_lower for word in ['product', 'inventory', 'stock', 'price', 'item', 'catalog']):
         products = data_sources.get('products', {}).get('products', [])
         context_parts.append(f"PRODUCT CATALOG ({len(products)} products):\n{json.dumps(products[:5], indent=2)}")
-        sources_used.append("product.json")
+        sources_used.append(source_name_map["product.json"])
     
     # Check for order/shopify queries
     if any(word in query_lower for word in ['order', 'purchase', 'shopify', 'customer', 'ord-']):
         orders = data_sources.get('shopify', {}).get('orders', [])
         context_parts.append(f"SHOPIFY ORDERS ({len(orders)} orders):\n{json.dumps(orders, indent=2)}")
-        sources_used.append("shopify_demo.json")
+        sources_used.append(source_name_map["shopify_demo.json"])
     
     # Check for shipping/tracking queries
     if any(word in query_lower for word in ['ship', 'delivery', 'track', 'dhl', 'dhl-']):
         shipments = data_sources.get('dhl', {}).get('shipments', [])
         context_parts.append(f"DHL TRACKING ({len(shipments)} shipments):\n{json.dumps(shipments, indent=2)}")
-        sources_used.append("dhl_demo.json")
+        sources_used.append(source_name_map["dhl_demo.json"])
     
     # Check for strategy queries
     if any(word in query_lower for word in ['strategy', 'marketing', 'campaign', 'plan', 'tactic', 'goal']):
         strategies = data_sources.get('strategies', {}).get('strategies', [])
         context_parts.append(f"MARKETING STRATEGIES ({len(strategies)} strategies):\n{json.dumps(strategies, indent=2)}")
-        sources_used.append("strategies.json")
+        sources_used.append(source_name_map["strategies.json"])
     
     # Check for Meta Ads queries
     if any(word in query_lower for word in ['meta', 'facebook', 'instagram', 'social', 'meta-']):
@@ -110,7 +121,7 @@ def create_context_from_query(query: str, data_sources: dict) -> tuple[str, List
         campaigns = meta_ads.get('campaigns', [])
         overall = meta_ads.get('overall_performance', {})
         context_parts.append(f"META ADS CAMPAIGNS ({len(campaigns)} campaigns):\n{json.dumps(campaigns, indent=2)}\n\nOVERALL PERFORMANCE:\n{json.dumps(overall, indent=2)}")
-        sources_used.append("meta_ads.json")
+        sources_used.append(source_name_map["meta_ads.json"])
     
     # Check for Google Ads queries
     if any(word in query_lower for word in ['google', 'search', 'ppc', 'adwords', 'google-']):
@@ -118,24 +129,24 @@ def create_context_from_query(query: str, data_sources: dict) -> tuple[str, List
         campaigns = google_ads.get('campaigns', [])
         overall = google_ads.get('overall_performance', {})
         context_parts.append(f"GOOGLE ADS CAMPAIGNS ({len(campaigns)} campaigns):\n{json.dumps(campaigns, indent=2)}\n\nOVERALL PERFORMANCE:\n{json.dumps(overall, indent=2)}")
-        sources_used.append("google_ads.json")
+        sources_used.append(source_name_map["google_ads.json"])
     
     # Check for performance/analytics queries
     if any(word in query_lower for word in ['performance', 'roi', 'roas', 'revenue', 'sales', 'conversion', 'analytics']):
-        if 'meta_ads.json' not in sources_used:
+        if source_name_map["meta_ads.json"] not in sources_used:
             meta_overall = data_sources.get('meta_ads', {}).get('overall_performance', {})
             context_parts.append(f"META ADS PERFORMANCE:\n{json.dumps(meta_overall, indent=2)}")
-            sources_used.append("meta_ads.json")
+            sources_used.append(source_name_map["meta_ads.json"])
         
-        if 'google_ads.json' not in sources_used:
+        if source_name_map["google_ads.json"] not in sources_used:
             google_overall = data_sources.get('google_ads', {}).get('overall_performance', {})
             context_parts.append(f"GOOGLE ADS PERFORMANCE:\n{json.dumps(google_overall, indent=2)}")
-            sources_used.append("google_ads.json")
+            sources_used.append(source_name_map["google_ads.json"])
     
     # If no specific data found, provide knowledge base
     if not context_parts:
         context_parts.append(f"KNOWLEDGE BASE:\n{ecom_config['knowledge_base']}")
-        sources_used.append("knowledge_base")
+        sources_used.append(source_name_map["knowledge_base"])
     
     return "\n\n---\n\n".join(context_parts), sources_used
 
@@ -254,8 +265,8 @@ Remember: Always base your answers on the actual data provided above."""
         # Get response from LLM
         response = await llm_chat.send_message(user_message)
         
-        # Add citation information
-        citation_text = "\n\n📚 **Sources Used:**\n" + "\n".join([f"- {source}" for source in sources_used])
+        # Add citation information (clean, no emoji, no bold)
+        citation_text = "\n\nSources Used:\n" + "\n".join([f"- {source}" for source in sources_used])
         
         return {
             "response": response + citation_text,
