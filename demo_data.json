@@ -1,0 +1,755 @@
+{
+  "sentimental_analysis": [
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-01-15T10:30:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "highly_satisfied",
+      "overall_sentimental_category": "product_quality",
+      "overall_summary": "Excellent quality and fast shipping",
+      "category": "Product Quality",
+      "review_text": "The product exceeded my expectations. Quality is top-notch and shipping was very fast."
+    },
+    {
+      "platform": "amazon",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-01-20T14:45:00Z",
+      "overall_sentiment": "negative",
+      "overall_sentiment_detail": "disappointed",
+      "overall_sentimental_category": "shipping_delay",
+      "overall_summary": "Delayed delivery and poor packaging",
+      "category": "Shipping & Delivery",
+      "review_text": "Package arrived late and was poorly packed. Product was damaged."
+    },
+    {
+      "platform": "trustpilot",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-02-05T09:15:00Z",
+      "overall_sentiment": "neutral",
+      "overall_sentiment_detail": "satisfied",
+      "overall_sentimental_category": "customer_service",
+      "overall_summary": "Good service but room for improvement",
+      "category": "Customer Service",
+      "review_text": "Customer service was responsive but could be more helpful with product recommendations."
+    },
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-02-10T16:20:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "satisfied",
+      "overall_sentimental_category": "value_for_money",
+      "overall_summary": "Great value for the price",
+      "category": "Pricing",
+      "review_text": "Very affordable considering the quality. Would definitely buy again."
+    },
+    {
+      "platform": "amazon",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-02-15T11:30:00Z",
+      "overall_sentiment": "negative",
+      "overall_sentiment_detail": "very_disappointed",
+      "overall_sentimental_category": "product_defect",
+      "overall_summary": "Product arrived defective",
+      "category": "Product Quality",
+      "review_text": "The item was defective out of the box. Very disappointing experience."
+    },
+    {
+      "platform": "google",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-03-01T13:45:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "highly_satisfied",
+      "overall_sentimental_category": "product_features",
+      "overall_summary": "Amazing features and functionality",
+      "category": "Product Quality",
+      "review_text": "All the features work perfectly. Very user-friendly and well-designed."
+    },
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-03-10T08:00:00Z",
+      "overall_sentiment": "negative",
+      "overall_sentiment_detail": "frustrated",
+      "overall_sentimental_category": "return_process",
+      "overall_summary": "Difficult return process",
+      "category": "Returns & Refunds",
+      "review_text": "Returning the product was unnecessarily complicated. Too many steps involved."
+    },
+    {
+      "platform": "trustpilot",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-03-15T15:30:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "very_satisfied",
+      "overall_sentimental_category": "customer_support",
+      "overall_summary": "Excellent customer support team",
+      "category": "Customer Service",
+      "review_text": "The support team was incredibly helpful and resolved my issue quickly."
+    },
+    {
+      "platform": "amazon",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-04-02T10:15:00Z",
+      "overall_sentiment": "neutral",
+      "overall_sentiment_detail": "neutral",
+      "overall_sentimental_category": "product_size",
+      "overall_summary": "Product sizing was slightly off",
+      "category": "Product Quality",
+      "review_text": "The size chart wasn't entirely accurate. Product is okay but not perfect fit."
+    },
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-04-20T12:45:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "satisfied",
+      "overall_sentimental_category": "website_experience",
+      "overall_summary": "Easy ordering process",
+      "category": "Website & App",
+      "review_text": "Website is very intuitive. Checkout process was smooth and fast."
+    },
+    {
+      "platform": "google",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-05-05T14:00:00Z",
+      "overall_sentiment": "negative",
+      "overall_sentiment_detail": "dissatisfied",
+      "overall_sentimental_category": "payment_issues",
+      "overall_summary": "Payment processing failed multiple times",
+      "category": "Payment & Checkout",
+      "review_text": "Had trouble with payment processing. Took several attempts to complete the order."
+    },
+    {
+      "platform": "trustpilot",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-05-18T09:30:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "highly_satisfied",
+      "overall_sentimental_category": "fast_shipping",
+      "overall_summary": "Super fast delivery",
+      "category": "Shipping & Delivery",
+      "review_text": "Package arrived in just 2 days! Very impressed with the shipping speed."
+    },
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-06-01T11:00:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "very_satisfied",
+      "overall_sentimental_category": "product_variety",
+      "overall_summary": "Great product selection",
+      "category": "Product Quality",
+      "review_text": "Lots of options to choose from. Found exactly what I was looking for."
+    },
+    {
+      "platform": "amazon",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-06-15T16:45:00Z",
+      "overall_sentiment": "negative",
+      "overall_sentiment_detail": "very_disappointed",
+      "overall_sentimental_category": "missing_items",
+      "overall_summary": "Items missing from package",
+      "category": "Shipping & Delivery",
+      "review_text": "Received the package but some items were missing. Very frustrating."
+    },
+    {
+      "platform": "shopify",
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-06-25T13:20:00Z",
+      "overall_sentiment": "positive",
+      "overall_sentiment_detail": "satisfied",
+      "overall_sentimental_category": "eco_friendly",
+      "overall_summary": "Love the sustainable packaging",
+      "category": "Packaging",
+      "review_text": "Appreciate the eco-friendly packaging. Shows the company cares about the environment."
+    }
+  ],
+
+  "sentimental_monthly_reports": [
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-01-01T00:00:00Z",
+      "total_reviews": 120,
+      "positive_count": 72,
+      "negative_count": 28,
+      "neutral_count": 20,
+      "positive_percentage": 60.0,
+      "negative_percentage": 23.33,
+      "neutral_percentage": 16.67,
+      "top_categories": {
+        "Product Quality": 45,
+        "Shipping & Delivery": 30,
+        "Customer Service": 25,
+        "Returns & Refunds": 20
+      },
+      "top_positive_themes": [
+        "Excellent quality",
+        "Fast shipping",
+        "Great customer service"
+      ],
+      "top_negative_themes": [
+        "Delayed delivery",
+        "Product defects",
+        "Difficult returns"
+      ],
+      "sentiment_trend": "improving",
+      "average_rating": 4.2,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain current product quality standards",
+          "Keep shipping speed consistent",
+          "Continue responsive customer service"
+        ],
+        "actionable_recommendations": [
+          "Implement better quality control for defective items",
+          "Streamline return process to reduce complexity",
+          "Improve packaging to prevent damage during shipping"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 35,
+            "titles": ["Excellent quality", "Great material", "Very durable", "Premium feel", "Perfect finish"]
+          },
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 25,
+            "titles": ["Fast shipping", "Arrived on time", "Well packaged", "Quick delivery", "Tracking was accurate"]
+          },
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 20,
+            "titles": ["Helpful support", "Quick response", "Friendly staff", "Resolved quickly", "Great communication"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 15,
+            "titles": ["Delayed shipping", "Package damaged", "Wrong delivery address", "Missing tracking", "Late arrival"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 10,
+            "titles": ["Product defective", "Poor quality", "Broke easily", "Not as described", "Manufacturing defect"]
+          },
+          {
+            "_id": {"category": "Returns & Refunds"},
+            "count": 8,
+            "titles": ["Difficult return", "Refund delayed", "Complex process", "No return label", "Restocking fee"]
+          }
+        ]
+      }
+    },
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-02-01T00:00:00Z",
+      "total_reviews": 135,
+      "positive_count": 85,
+      "negative_count": 30,
+      "neutral_count": 20,
+      "positive_percentage": 62.96,
+      "negative_percentage": 22.22,
+      "neutral_percentage": 14.82,
+      "top_categories": {
+        "Product Quality": 50,
+        "Customer Service": 35,
+        "Shipping & Delivery": 28,
+        "Pricing": 22
+      },
+      "top_positive_themes": [
+        "Great value",
+        "Amazing features",
+        "Responsive support"
+      ],
+      "top_negative_themes": [
+        "Shipping delays",
+        "Product sizing issues",
+        "Return complications"
+      ],
+      "sentiment_trend": "stable",
+      "average_rating": 4.3,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain competitive pricing strategy",
+          "Keep product features innovative",
+          "Continue quick support response times"
+        ],
+        "actionable_recommendations": [
+          "Update size chart for better accuracy",
+          "Partner with faster shipping carriers",
+          "Simplify return authorization process"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Pricing"},
+            "count": 30,
+            "titles": ["Great value", "Affordable", "Worth the price", "Good deal", "Competitive pricing"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 28,
+            "titles": ["Amazing features", "Innovative design", "High quality", "Works perfectly", "Exceeded expectations"]
+          },
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 22,
+            "titles": ["Responsive support", "Quick help", "Professional service", "Solved my issue", "Very helpful"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 12,
+            "titles": ["Shipping delayed", "Took too long", "Missed delivery window", "Poor tracking", "Late shipment"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 10,
+            "titles": ["Size wrong", "Doesn't fit", "Sizing issues", "Too small", "Measurements off"]
+          },
+          {
+            "_id": {"category": "Returns & Refunds"},
+            "count": 8,
+            "titles": ["Return complicated", "Hard to return", "Confusing process", "Too many steps", "Difficult"]
+          }
+        ]
+      }
+    },
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-03-01T00:00:00Z",
+      "total_reviews": 148,
+      "positive_count": 95,
+      "negative_count": 32,
+      "neutral_count": 21,
+      "positive_percentage": 64.19,
+      "negative_percentage": 21.62,
+      "neutral_percentage": 14.19,
+      "top_categories": {
+        "Product Quality": 55,
+        "Customer Service": 40,
+        "Website & App": 28,
+        "Shipping & Delivery": 25
+      },
+      "top_positive_themes": [
+        "Excellent support",
+        "Easy website",
+        "Quality products"
+      ],
+      "top_negative_themes": [
+        "Return process",
+        "Payment issues",
+        "Delivery delays"
+      ],
+      "sentiment_trend": "improving",
+      "average_rating": 4.4,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain excellent customer support quality",
+          "Keep website user experience simple",
+          "Continue focus on product quality"
+        ],
+        "actionable_recommendations": [
+          "Add one-click return initiation feature",
+          "Integrate additional payment gateways",
+          "Provide real-time delivery tracking"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 32,
+            "titles": ["Excellent support", "Amazing help", "Very responsive", "Professional team", "Solved quickly"]
+          },
+          {
+            "_id": {"category": "Website & App"},
+            "count": 25,
+            "titles": ["Easy to use", "Simple checkout", "User friendly", "Great interface", "Intuitive design"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 28,
+            "titles": ["Quality products", "Well made", "Durable", "Premium quality", "Long lasting"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Returns & Refunds"},
+            "count": 14,
+            "titles": ["Return process hard", "Too complicated", "Difficult to return", "Confusing steps", "Long wait"]
+          },
+          {
+            "_id": {"category": "Payment & Checkout"},
+            "count": 10,
+            "titles": ["Payment failed", "Checkout error", "Card declined", "Payment issues", "Processing error"]
+          },
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 8,
+            "titles": ["Delivery delayed", "Arrived late", "Shipping slow", "Missed deadline", "Long wait"]
+          }
+        ]
+      }
+    },
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-04-01T00:00:00Z",
+      "total_reviews": 152,
+      "positive_count": 100,
+      "negative_count": 30,
+      "neutral_count": 22,
+      "positive_percentage": 65.79,
+      "negative_percentage": 19.74,
+      "neutral_percentage": 14.47,
+      "top_categories": {
+        "Product Quality": 60,
+        "Website & App": 38,
+        "Customer Service": 32,
+        "Shipping & Delivery": 22
+      },
+      "top_positive_themes": [
+        "Easy ordering",
+        "Product variety",
+        "Quick delivery"
+      ],
+      "top_negative_themes": [
+        "Sizing issues",
+        "Website glitches",
+        "Customer service delays"
+      ],
+      "sentiment_trend": "improving",
+      "average_rating": 4.5,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain streamlined checkout process",
+          "Keep expanding product variety",
+          "Continue improving delivery times"
+        ],
+        "actionable_recommendations": [
+          "Fix website bugs and improve stability",
+          "Add AI-powered size recommendation tool",
+          "Increase customer service team capacity"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Website & App"},
+            "count": 30,
+            "titles": ["Easy ordering", "Smooth checkout", "Fast process", "Simple to use", "Great UX"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 35,
+            "titles": ["Product variety", "Many options", "Great selection", "Wide range", "Lots of choices"]
+          },
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 20,
+            "titles": ["Quick delivery", "Fast shipping", "Arrived early", "Speedy service", "Express delivery"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 12,
+            "titles": ["Sizing issues", "Size wrong", "Doesn't fit", "Too big", "Too small"]
+          },
+          {
+            "_id": {"category": "Website & App"},
+            "count": 10,
+            "titles": ["Website glitches", "Bugs", "Errors", "Crashes", "Not loading"]
+          },
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 8,
+            "titles": ["Slow response", "Delayed help", "Long wait", "No reply", "Support delays"]
+          }
+        ]
+      }
+    },
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-05-01T00:00:00Z",
+      "total_reviews": 165,
+      "positive_count": 110,
+      "negative_count": 32,
+      "neutral_count": 23,
+      "positive_percentage": 66.67,
+      "negative_percentage": 19.39,
+      "neutral_percentage": 13.94,
+      "top_categories": {
+        "Shipping & Delivery": 62,
+        "Product Quality": 58,
+        "Payment & Checkout": 25,
+        "Customer Service": 20
+      },
+      "top_positive_themes": [
+        "Fast shipping",
+        "Reliable service",
+        "Good quality"
+      ],
+      "top_negative_themes": [
+        "Payment failures",
+        "Occasional defects",
+        "Support response time"
+      ],
+      "sentiment_trend": "stable",
+      "average_rating": 4.5,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain fast shipping partnerships",
+          "Keep service reliability high",
+          "Continue quality assurance processes"
+        ],
+        "actionable_recommendations": [
+          "Upgrade payment processing infrastructure",
+          "Implement stricter pre-shipment quality checks",
+          "Add live chat for instant support"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 40,
+            "titles": ["Fast shipping", "Quick delivery", "Speedy service", "Arrived early", "Great logistics"]
+          },
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 25,
+            "titles": ["Reliable service", "Dependable", "Trustworthy", "Consistent", "Always helpful"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 30,
+            "titles": ["Good quality", "Well made", "Solid product", "Durable", "Quality assurance"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Payment & Checkout"},
+            "count": 15,
+            "titles": ["Payment failures", "Card declined", "Payment error", "Checkout issues", "Processing failed"]
+          },
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 10,
+            "titles": ["Occasional defects", "Minor issues", "Small problems", "Quality concerns", "Defective item"]
+          },
+          {
+            "_id": {"category": "Customer Service"},
+            "count": 7,
+            "titles": ["Response time slow", "Delayed support", "Long wait", "Took too long", "Slow help"]
+          }
+        ]
+      }
+    },
+    {
+      "company": "marielle_stokkelaar",
+      "time_period": "2025-06-01T00:00:00Z",
+      "total_reviews": 178,
+      "positive_count": 120,
+      "negative_count": 35,
+      "neutral_count": 23,
+      "positive_percentage": 67.42,
+      "negative_percentage": 19.66,
+      "neutral_percentage": 12.92,
+      "top_categories": {
+        "Product Quality": 65,
+        "Shipping & Delivery": 55,
+        "Packaging": 30,
+        "Customer Service": 28
+      },
+      "top_positive_themes": [
+        "Product selection",
+        "Eco-friendly packaging",
+        "Fast delivery"
+      ],
+      "top_negative_themes": [
+        "Missing items",
+        "Packaging damage",
+        "Return delays"
+      ],
+      "sentiment_trend": "improving",
+      "average_rating": 4.6,
+      "positive_insight": {
+        "best_practices_to_continue": [
+          "Maintain wide product selection",
+          "Continue eco-friendly packaging initiatives",
+          "Keep delivery speed competitive"
+        ],
+        "actionable_recommendations": [
+          "Implement double-check system for order fulfillment",
+          "Use stronger protective packaging materials",
+          "Expedite return processing timelines"
+        ]
+      },
+      "aggregated_data": {
+        "positive": [
+          {
+            "_id": {"category": "Product Quality"},
+            "count": 38,
+            "titles": ["Product selection", "Great variety", "Many options", "Wide range", "Diverse catalog"]
+          },
+          {
+            "_id": {"category": "Packaging"},
+            "count": 28,
+            "titles": ["Eco-friendly packaging", "Sustainable", "Green materials", "Recyclable", "Environmental"]
+          },
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 32,
+            "titles": ["Fast delivery", "Quick shipping", "Speedy", "Arrived fast", "Express service"]
+          }
+        ],
+        "negative": [
+          {
+            "_id": {"category": "Shipping & Delivery"},
+            "count": 18,
+            "titles": ["Missing items", "Incomplete order", "Items not received", "Wrong quantity", "Short shipment"]
+          },
+          {
+            "_id": {"category": "Packaging"},
+            "count": 12,
+            "titles": ["Packaging damage", "Box crushed", "Poor protection", "Damaged in transit", "Broken packaging"]
+          },
+          {
+            "_id": {"category": "Returns & Refunds"},
+            "count": 5,
+            "titles": ["Return delays", "Slow refund", "Long processing", "Waiting for return", "Refund pending"]
+          }
+        ]
+      }
+    }
+  ],
+
+  "sentimental_emotion_analysis_detail": [
+    {
+      "overall_sentiment_detail": "highly_satisfied",
+      "categories": ["Product Quality", "Shipping & Delivery", "Customer Service"],
+      "overall_sentimental_categories": ["product_quality", "fast_shipping", "customer_support"],
+      "summary": "Customers are very happy with product quality and service",
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "satisfied",
+      "categories": ["Pricing", "Product Quality", "Website & App"],
+      "overall_sentimental_categories": ["value_for_money", "product_features", "website_experience"],
+      "summary": "Good value and user-friendly experience",
+      "created_at": "2025-02-01T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "disappointed",
+      "categories": ["Shipping & Delivery", "Product Quality"],
+      "overall_sentimental_categories": ["shipping_delay", "product_defect"],
+      "summary": "Issues with delivery timing and product condition",
+      "created_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "very_disappointed",
+      "categories": ["Product Quality", "Shipping & Delivery"],
+      "overall_sentimental_categories": ["product_defect", "missing_items"],
+      "summary": "Major concerns with product defects and incomplete orders",
+      "created_at": "2025-02-10T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "frustrated",
+      "categories": ["Returns & Refunds", "Customer Service"],
+      "overall_sentimental_categories": ["return_process", "customer_service"],
+      "summary": "Difficulties with return procedures and support",
+      "created_at": "2025-03-05T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "very_satisfied",
+      "categories": ["Customer Service", "Product Quality"],
+      "overall_sentimental_categories": ["customer_support", "product_variety"],
+      "summary": "Excellent support and wide product selection",
+      "created_at": "2025-04-01T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "neutral",
+      "categories": ["Product Quality", "Pricing"],
+      "overall_sentimental_categories": ["product_size", "value_for_money"],
+      "summary": "Mixed feelings about sizing and pricing",
+      "created_at": "2025-03-20T00:00:00Z"
+    },
+    {
+      "overall_sentiment_detail": "dissatisfied",
+      "categories": ["Payment & Checkout", "Website & App"],
+      "overall_sentimental_categories": ["payment_issues", "website_experience"],
+      "summary": "Problems with payment processing",
+      "created_at": "2025-05-01T00:00:00Z"
+    }
+  ],
+
+  "shopify_insights_lifetime": {
+    "company": "marielle_stokkelaar",
+    "total_gross_sales": 1250000.50,
+    "total_customers": 4567,
+    "total_orders": 8934,
+    "best_selling_products": [
+      {
+        "product_name": "Premium Cotton T-Shirt",
+        "product_id": "PROD-001",
+        "units_sold": 1245,
+        "revenue": 37350.00,
+        "category": "Apparel"
+      },
+      {
+        "product_name": "Eco-Friendly Water Bottle",
+        "product_id": "PROD-002",
+        "units_sold": 987,
+        "revenue": 24675.00,
+        "category": "Accessories"
+      },
+      {
+        "product_name": "Organic Face Cream",
+        "product_id": "PROD-003",
+        "units_sold": 856,
+        "revenue": 42800.00,
+        "category": "Beauty"
+      },
+      {
+        "product_name": "Wireless Earbuds Pro",
+        "product_id": "PROD-004",
+        "units_sold": 734,
+        "revenue": 73400.00,
+        "category": "Electronics"
+      },
+      {
+        "product_name": "Yoga Mat Premium",
+        "product_id": "PROD-005",
+        "units_sold": 645,
+        "revenue": 32250.00,
+        "category": "Sports"
+      }
+    ],
+    "average_order_value": 139.95,
+    "repeat_customer_rate": 42.5,
+    "last_updated": "2025-06-30T23:59:59Z"
+  },
+
+  "sentimental_dashboard_users": [
+    {
+      "email": "admin@joineverestgroup.com",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5QoI7MEP.xQH6",
+      "created_at": "2025-01-01T00:00:00Z",
+      "role": "admin"
+    },
+    {
+      "email": "analyst@joineverestgroup.com",
+      "hashed_password": "$2b$12$KQv2c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5QoI7MEP.xQH7",
+      "created_at": "2025-01-15T00:00:00Z",
+      "role": "analyst"
+    }
+  ]
+}

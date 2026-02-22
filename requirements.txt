@@ -1,0 +1,12 @@
+# Core FastAPI dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+
+# Environment variables
+python-dotenv==1.0.1
+
+# MongoDB dependencies (if needed for sentimental_dashboard.py)
+# Uncomment these if you want to use MongoDB backend
+# motor==3.6.0
+# pymongo==4.10.1

@@ -1,0 +1,184 @@
+{
+  "emails": [
+    {
+      "id": "email_001",
+      "from": "john.smith@example.com",
+      "from_name": "John Smith",
+      "subject": "Order #12345 - Missing Items",
+      "body": "Hi, I received my order today but I'm missing 2 items from my package. I ordered 5 products but only received 3. Can you please help me with this? Order number is 12345.",
+      "timestamp": "2025-02-20T09:15:00Z",
+      "sentiment": "urgent",
+      "read": false,
+      "ai_reply": "Dear John,\n\nThank you for reaching out. I sincerely apologize for the inconvenience with your order #12345. I've immediately escalated this to our fulfillment team.\n\nI can see that 2 items are indeed missing from your shipment. We will ship the missing items via express delivery at no additional cost, and you should receive them within 2-3 business days.\n\nAs an apology, I've also added a 15% discount code (SORRY15) to your account for your next purchase.\n\nTracking information will be sent to your email shortly.\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_002",
+      "from": "sarah.johnson@email.com",
+      "from_name": "Sarah Johnson",
+      "subject": "TERRIBLE EXPERIENCE!!! REFUND NOW!!!",
+      "body": "This is absolutely ridiculous! I've been waiting for my refund for 3 WEEKS now. Your customer service is terrible and I want my money back RIGHT NOW or I'm going to report you to consumer protection. This is unacceptable!!!",
+      "timestamp": "2025-02-20T10:30:00Z",
+      "sentiment": "angry",
+      "read": false,
+      "ai_reply": "Dear Sarah,\n\nI completely understand your frustration, and I sincerely apologize for the delay in processing your refund. This is not the experience we want for our valued customers.\n\nI have personally reviewed your case and expedited your refund. You should see the funds in your account within 24-48 hours. I've also sent you a confirmation email with the transaction details.\n\nTo make up for this poor experience, I'm adding a $25 store credit to your account and upgrading you to our VIP support tier for priority assistance in the future.\n\nPlease let me know if you don't see the refund by Friday, and I'll personally follow up.\n\nSincerely,\nSenior Customer Support Manager"
+    },
+    {
+      "id": "email_003",
+      "from": "promo.deals@spam-site.com",
+      "from_name": "Amazing Deals",
+      "subject": "You Won $1,000,000!!! Click Here Now!!!",
+      "body": "Congratulations! You have been selected as our lucky winner. Click this link to claim your prize now! Limited time offer! Act fast!!!",
+      "timestamp": "2025-02-20T11:00:00Z",
+      "sentiment": "spam",
+      "read": true,
+      "ai_reply": "This email has been automatically marked as spam and moved to the spam folder. No response needed."
+    },
+    {
+      "id": "email_004",
+      "from": "mike.chen@business.com",
+      "from_name": "Mike Chen",
+      "subject": "Bulk Order Inquiry - 500+ Units",
+      "body": "Hello, I'm the procurement manager at XYZ Corporation. We're interested in placing a bulk order of 500+ units of your product line. Could you please connect me with your B2B sales team to discuss pricing, customization options, and delivery timelines?",
+      "timestamp": "2025-02-20T08:45:00Z",
+      "sentiment": "handover",
+      "read": false,
+      "ai_reply": "Dear Mike,\n\nThank you for your interest in partnering with us for your bulk order needs. This is fantastic!\n\nI'm forwarding your inquiry to our dedicated B2B Sales Manager, Jessica Martinez (jessica.martinez@company.com), who specializes in enterprise orders and customization.\n\nJessica will reach out to you within 4 business hours to schedule a call and discuss:\n- Volume-based pricing\n- Customization options\n- Delivery schedules\n- Payment terms\n\nIn the meantime, I've also sent you our B2B catalog and corporate pricing guide to your email.\n\nLooking forward to working with you!\n\nBest regards,\nCustomer Support Team\n\nCC: B2B Sales Team"
+    },
+    {
+      "id": "email_005",
+      "from": "emily.white@gmail.com",
+      "from_name": "Emily White",
+      "subject": "Product Inquiry - Shipping to Canada",
+      "body": "Hi there, I'm interested in purchasing your product but I live in Canada. Do you ship internationally? What are the shipping costs and estimated delivery times? Thanks!",
+      "timestamp": "2025-02-19T14:20:00Z",
+      "sentiment": "normal",
+      "read": true,
+      "ai_reply": "Dear Emily,\n\nThank you for your interest in our products!\n\nYes, we absolutely ship to Canada! Here are the details:\n\n**Shipping Options:**\n- Standard Shipping (7-10 business days): $12.99\n- Express Shipping (3-5 business days): $24.99\n- Free shipping on orders over $75\n\n**Additional Information:**\n- All prices are in USD\n- Customs duties may apply (usually 5-10% of order value)\n- Full tracking provided\n- 30-day return policy applies to international orders\n\nYou can view our full international shipping policy here: [link]\n\nLet me know if you have any other questions!\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_006",
+      "from": "david.lee@company.org",
+      "from_name": "David Lee",
+      "subject": "URGENT: Payment Failed - Account Suspended",
+      "body": "I just tried to place an order and my payment failed 3 times! Now it's saying my account is suspended. I need these items by tomorrow for a gift. Please fix this ASAP!",
+      "timestamp": "2025-02-20T13:10:00Z",
+      "sentiment": "urgent",
+      "read": false,
+      "ai_reply": "Dear David,\n\nI apologize for the payment issues you're experiencing. I understand the urgency as you need this for a gift tomorrow.\n\nI've immediately:\n1. Unsuspended your account\n2. Cleared the payment flags\n3. Reserved the items in your cart for 24 hours\n\n**To complete your order:**\n- Try using a different payment method or card\n- Or call our payment support hotline: 1-800-XXX-XXXX for immediate assistance\n\nIf you complete the order within the next 2 hours, I can upgrade you to next-day delivery at no extra charge to ensure you get your gift on time.\n\nPlease let me know if you continue to have issues!\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_007",
+      "from": "lisa.brown@email.net",
+      "from_name": "Lisa Brown",
+      "subject": "Thank you for the excellent service!",
+      "body": "I just wanted to send a quick note to say thank you for the amazing customer service. My issue was resolved quickly and professionally. You guys are awesome!",
+      "timestamp": "2025-02-19T16:45:00Z",
+      "sentiment": "normal",
+      "read": true,
+      "ai_reply": "Dear Lisa,\n\nThank you so much for taking the time to share this wonderful feedback! Messages like yours truly make our day and motivate our entire team.\n\nWe're thrilled that we could resolve your issue quickly. Providing excellent customer service is our top priority, and it's great to know we hit the mark.\n\nAs a token of our appreciation, I've added a special 10% discount code (THANKS10) to your account for your next purchase.\n\nWe look forward to serving you again soon!\n\nWarm regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_008",
+      "from": "spam-bot@random.xyz",
+      "from_name": "Crypto Investment",
+      "subject": "Make $10,000 per day with Bitcoin!",
+      "body": "Invest now in our amazing crypto platform and make thousands per day! Click here to sign up! Don't miss this opportunity!!!",
+      "timestamp": "2025-02-20T07:30:00Z",
+      "sentiment": "spam",
+      "read": true,
+      "ai_reply": "This email has been automatically marked as spam and moved to the spam folder. No response needed."
+    },
+    {
+      "id": "email_009",
+      "from": "robert.wilson@tech.com",
+      "from_name": "Robert Wilson",
+      "subject": "API Integration Request - Enterprise Plan",
+      "body": "Hello, we are a SaaS company interested in integrating your product API into our platform. We have around 10,000 users. Can you please connect me with your enterprise solutions team to discuss API access, pricing, and technical documentation?",
+      "timestamp": "2025-02-19T11:20:00Z",
+      "sentiment": "handover",
+      "read": true,
+      "ai_reply": "Dear Robert,\n\nThank you for your interest in our API integration services!\n\nI'm connecting you with our Enterprise Solutions Architect, Thomas Anderson (thomas.anderson@company.com), who specializes in API integrations and technical partnerships.\n\nThomas will contact you within 24 hours to discuss:\n- API documentation and technical specifications\n- Enterprise pricing tiers\n- Integration support and SLA\n- Custom development options\n- Security and compliance requirements\n\nI've also sent you our API overview document and integration case studies.\n\nLooking forward to our partnership!\n\nBest regards,\nCustomer Support Team\n\nCC: Enterprise Solutions Team"
+    },
+    {
+      "id": "email_010",
+      "from": "anna.garcia@mail.com",
+      "from_name": "Anna Garcia",
+      "subject": "Product defect - requesting replacement",
+      "body": "Hi, I received my order last week and unfortunately the product stopped working after 3 days. I think it's defective. Can I get a replacement? I really like the product otherwise.",
+      "timestamp": "2025-02-18T15:30:00Z",
+      "sentiment": "normal",
+      "read": true,
+      "ai_reply": "Dear Anna,\n\nI'm sorry to hear that your product stopped working after just 3 days. That's definitely not normal, and I'm glad you reached out.\n\nI'd be happy to send you a replacement right away. Here's what I'm doing:\n\n1. Shipping a brand new replacement via express delivery (arrives in 2-3 days)\n2. No need to return the defective unit - you can keep or dispose of it\n3. Adding 3 months extended warranty to your replacement at no charge\n\nYour replacement tracking number is: TRACK123456789\n\nI'm also including a small gift as an apology for the inconvenience.\n\nPlease let me know if you have any issues with the replacement!\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_011",
+      "from": "chris.martin@business.net",
+      "from_name": "Chris Martin",
+      "subject": "Invoice discrepancy - overcharged",
+      "body": "I was charged $299 but my cart total was $249. There seems to be a $50 discrepancy. Can you please check my invoice #INV-7890 and issue a refund for the overcharge?",
+      "timestamp": "2025-02-20T12:00:00Z",
+      "sentiment": "urgent",
+      "read": false,
+      "ai_reply": "Dear Chris,\n\nThank you for bringing this to our attention. I apologize for the billing discrepancy.\n\nI've reviewed invoice #INV-7890 and you're absolutely correct - there was a system error that added an incorrect shipping charge of $50.\n\nI've immediately processed:\n1. Full refund of $50 to your original payment method (arrives in 3-5 business days)\n2. A $10 store credit for the inconvenience\n3. Updated invoice sent to your email\n\nI've also flagged this issue for our billing team to prevent it from happening to other customers.\n\nSorry again for the error. Please confirm once you receive the refund.\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_012",
+      "from": "jennifer.davis@email.com",
+      "from_name": "Jennifer Davis",
+      "subject": "Question about product specifications",
+      "body": "Hi, I'm looking at your product and wondering about the dimensions and material. Is it made of plastic or metal? What are the exact measurements? Also, is it waterproof?",
+      "timestamp": "2025-02-19T10:15:00Z",
+      "sentiment": "normal",
+      "read": true,
+      "ai_reply": "Dear Jennifer,\n\nGreat questions! Let me provide you with the detailed specifications:\n\n**Material:** Premium aluminum alloy with matte finish\n\n**Dimensions:**\n- Length: 8.5 inches (21.6 cm)\n- Width: 4.2 inches (10.7 cm)\n- Height: 2.1 inches (5.3 cm)\n- Weight: 12 oz (340g)\n\n**Water Resistance:** IPX7 rated - fully waterproof up to 1 meter for 30 minutes\n\n**Additional Features:**\n- Scratch-resistant coating\n- Temperature range: -10°C to 50°C\n- Warranty: 2 years\n\nYou can find more detailed specs and diagrams on our product page: [link]\n\nLet me know if you need any other information!\n\nBest regards,\nCustomer Support Team"
+    },
+    {
+      "id": "email_013",
+      "from": "phishing@fake-bank.com",
+      "from_name": "Your Bank",
+      "subject": "URGENT: Verify your account now!",
+      "body": "Your account has been compromised. Click this link immediately to verify your identity or your account will be closed within 24 hours!",
+      "timestamp": "2025-02-20T06:00:00Z",
+      "sentiment": "spam",
+      "read": true,
+      "ai_reply": "This email has been automatically marked as spam and moved to the spam folder. No response needed."
+    },
+    {
+      "id": "email_014",
+      "from": "kevin.thompson@corp.com",
+      "from_name": "Kevin Thompson",
+      "subject": "Partnership Opportunity - Distribution Rights",
+      "body": "Dear Team, I represent a major distribution network across Europe. We're interested in becoming an authorized distributor for your products in the EU market. I'd like to discuss exclusivity rights, minimum order quantities, and partnership terms. Can you connect me with your business development team?",
+      "timestamp": "2025-02-19T09:00:00Z",
+      "sentiment": "handover",
+      "read": true,
+      "ai_reply": "Dear Kevin,\n\nThank you for your interest in becoming a distribution partner. This is an exciting opportunity!\n\nI'm forwarding your inquiry to our VP of Business Development, Sarah Mitchell (sarah.mitchell@company.com), who oversees all international distribution partnerships.\n\nSarah will reach out to you within 2 business days to schedule a detailed discussion about:\n- Exclusive distribution rights\n- Territory coverage\n- Minimum order requirements\n- Pricing and margin structure\n- Marketing support\n- Training and onboarding\n\nI've also CC'd our International Partnerships team on this email.\n\nWe look forward to exploring this partnership!\n\nBest regards,\nCustomer Support Team\n\nCC: Business Development Team"
+    },
+    {
+      "id": "email_015",
+      "from": "nicole.anderson@email.org",
+      "from_name": "Nicole Anderson",
+      "subject": "Delivery delayed - need update",
+      "body": "Hi, my order was supposed to arrive yesterday but the tracking shows it's still in transit. Can you give me an update on when I can expect delivery? Order #67890. Thanks!",
+      "timestamp": "2025-02-20T14:00:00Z",
+      "sentiment": "normal",
+      "read": false,
+      "ai_reply": "Dear Nicole,\n\nThank you for reaching out. I apologize for the delivery delay on order #67890.\n\nI've checked with our shipping carrier, and there was a weather-related delay at the distribution center. Your package is currently in transit and scheduled for delivery by end of day tomorrow (Feb 21).\n\n**Updated Tracking Info:**\n- Current location: Regional sorting facility\n- Expected delivery: Feb 21, by 8:00 PM\n- Tracking: TRACK987654321\n\nI've applied a $10 credit to your account for the inconvenience, and you'll receive real-time SMS updates as your package moves.\n\nPlease let me know if you don't receive it by tomorrow evening!\n\nBest regards,\nCustomer Support Team"
+    }
+  ],
+
+  "email_statistics": {
+    "total_emails": 15,
+    "total_replied": 15,
+    "avg_response_time_minutes": 12,
+    "sentiment_breakdown": {
+      "normal": 6,
+      "urgent": 4,
+      "angry": 1,
+      "spam": 3,
+      "handover": 3
+    },
+    "ai_reply_accuracy": 94.5,
+    "customer_satisfaction": 4.7
+  }
+}
