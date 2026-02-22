@@ -13,8 +13,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include routers
-app.include_router(sentiment_router)
+# Include routers with /api prefix
+app.include_router(sentiment_router, prefix="/api")
 
 @app.get("/")
 async def root():
@@ -22,10 +22,23 @@ async def root():
         "message": "B2B Sentiment Analysis API",
         "version": "1.0",
         "endpoints": {
-            "companies": "/companies",
-            "reports": "/report/*",
-            "reviews": "/reviews",
-            "shopify": "/shopify_insights"
+            "companies": "/api/companies",
+            "reports": "/api/report/*",
+            "reviews": "/api/reviews",
+            "shopify": "/api/shopify_insights"
+        }
+    }
+
+@app.get("/api")
+async def api_root():
+    return {
+        "message": "B2B Sentiment Analysis API",
+        "version": "1.0",
+        "endpoints": {
+            "companies": "/api/companies",
+            "reports": "/api/report/*",
+            "reviews": "/api/reviews",
+            "shopify": "/api/shopify_insights"
         }
     }
 
