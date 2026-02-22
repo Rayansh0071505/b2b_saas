@@ -18,7 +18,7 @@ app.add_middleware(
 
 # Include routers with /api prefix
 app.include_router(sentiment_router, prefix="/api")
-app.include_router(bot_routes, prefix="/api")
+app.include_router(bot_router, prefix="/api")
 app.include_router(ecom_agent_router, prefix="/api")
 app.include_router(qualitative_router, prefix="/api")
 
