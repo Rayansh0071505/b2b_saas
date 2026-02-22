@@ -296,13 +296,49 @@ const EcomAgentDashboard: React.FC = () => {
                       className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                     >
                       <div
-                        className={`max-w-[80%] rounded-xl p-4 ${
+                        className={`max-w-[85%] rounded-xl p-4 ${
                           msg.role === 'user'
                             ? 'bg-blue-500 text-white'
                             : 'bg-gray-800/80 text-gray-200 border border-gray-700/50'
                         }`}
                       >
                         <p className="whitespace-pre-wrap">{msg.message}</p>
+                        
+                        {/* Show chart if data is available */}
+                        {msg.chartData && msg.chartData.data && msg.chartData.data.length > 0 && (
+                          <div className="mt-4 p-4 bg-gray-900/50 rounded-lg border border-gray-700/30">
+                            <div className="flex items-center gap-2 mb-3">
+                              <BarChart3 className="w-4 h-4 text-blue-400" />
+                              <span className="text-sm font-semibold text-gray-300">Visual Analysis</span>
+                            </div>
+                            <ResponsiveContainer width="100%" height={200}>
+                              <BarChart data={msg.chartData.data}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                <XAxis dataKey="platform" stroke="#9ca3af" style={{fontSize: '12px'}} />
+                                <YAxis stroke="#9ca3af" style={{fontSize: '12px'}} />
+                                <Tooltip 
+                                  contentStyle={{ 
+                                    backgroundColor: '#1f2937', 
+                                    border: '1px solid #374151',
+                                    borderRadius: '8px'
+                                  }} 
+                                />
+                                <Legend wrapperStyle={{fontSize: '12px'}} />
+                                <Bar dataKey="spend" fill="#ef4444" name="Spend ($)" />
+                                <Bar dataKey="revenue" fill="#10b981" name="Revenue ($)" />
+                              </BarChart>
+                            </ResponsiveContainer>
+                            <div className="grid grid-cols-2 gap-2 mt-3">
+                              {msg.chartData.data.map((item: any, i: number) => (
+                                <div key={i} className="bg-gray-800/50 rounded p-2">
+                                  <p className="text-xs text-gray-400">{item.platform}</p>
+                                  <p className="text-sm font-semibold text-blue-400">ROAS: {item.roas}x</p>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        
                         {msg.sources && msg.sources.length > 0 && (
                           <div className="mt-3 pt-3 border-t border-gray-700/50">
                             <p className="text-xs font-semibold text-gray-400 mb-1">Sources Used:</p>
