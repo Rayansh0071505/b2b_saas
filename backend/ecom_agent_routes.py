@@ -4,28 +4,19 @@ import os
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
-from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
+from emergentintegrations.llm.chat import LlmChat, UserMessage
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 ecom_agent_router = APIRouter()
 
-# OpenAI API key and base URL for Emergent integration
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-emergent-e6cC403A7332fC34cA")
-# Use Emergent's integration proxy
-INTEGRATION_PROXY_URL = os.getenv("INTEGRATION_PROXY_URL", "https://integrations.emergentagent.com")
-
-# Initialize LangChain LLM with Emergent proxy
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
-    temperature=0.3,
-    api_key=OPENAI_API_KEY,
-    base_url=f"{INTEGRATION_PROXY_URL}/openai/v1"
-)
+# Emergent LLM API key
+EMERGENT_LLM_KEY = os.getenv("EMERGENT_LLM_KEY", "sk-emergent-e6cC403A7332fC34cA")
 
 # Load all data sources
 def load_all_data_sources():
@@ -217,7 +208,7 @@ async def get_ecom_connectors():
 @ecom_agent_router.post("/ecom-agent/chat")
 async def chat_with_ecom_agent(chat: EcomChatMessage):
     """
-    Chat with e-commerce AI agent powered by GPT-4o-mini and LangChain
+    Chat with e-commerce AI agent powered by GPT-4o-mini via Emergent Integrations
     Includes citations showing which data sources were used
     """
     try:
@@ -227,9 +218,8 @@ async def chat_with_ecom_agent(chat: EcomChatMessage):
         # Create context from query
         context, sources_used = create_context_from_query(chat.message, data_sources)
         
-        # Create LangChain prompt template
-        prompt_template = ChatPromptTemplate.from_messages([
-            ("system", """You are an expert E-commerce AI Assistant for Saturnin.
+        # Create system message with context
+        system_message = f"""You are an expert E-commerce AI Assistant for Saturnin.
 
 You have access to real-time data from multiple sources:
 - Product catalog
@@ -249,20 +239,20 @@ Your role:
 Context from connected data sources:
 {context}
 
-Remember: Always base your answers on the actual data provided above."""),
-            ("human", "{question}")
-        ])
+Remember: Always base your answers on the actual data provided above."""
+
+        # Initialize chat with Emergent Integrations
+        llm_chat = LlmChat(
+            api_key=EMERGENT_LLM_KEY,
+            session_id=f"ecom-agent-{hash(chat.message)}",
+            system_message=system_message
+        ).with_model("openai", "gpt-4o-mini")
         
-        # Create chain
-        chain = (
-            {"context": lambda x: context, "question": lambda x: x["question"]}
-            | prompt_template
-            | llm
-            | StrOutputParser()
-        )
+        # Create user message
+        user_message = UserMessage(text=chat.message)
         
         # Get response from LLM
-        response = await chain.ainvoke({"question": chat.message})
+        response = await llm_chat.send_message(user_message)
         
         # Add citation information
         citation_text = "\n\n📚 **Sources Used:**\n" + "\n".join([f"- {source}" for source in sources_used])
