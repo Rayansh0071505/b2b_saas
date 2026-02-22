@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.routes import sentiment_router
 from backend.bot_routes import bot_router
 from backend.ecom_agent_routes import ecom_agent_router
+from backend.qualitative_routes import qualitative_router
 
 app = FastAPI(title="Saturnin AI Platform API")
 
@@ -17,8 +18,9 @@ app.add_middleware(
 
 # Include routers with /api prefix
 app.include_router(sentiment_router, prefix="/api")
-app.include_router(bot_router, prefix="/api")
+app.include_router(bot_routes, prefix="/api")
 app.include_router(ecom_agent_router, prefix="/api")
+app.include_router(qualitative_router, prefix="/api")
 
 @app.get("/")
 async def root():
