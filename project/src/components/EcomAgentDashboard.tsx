@@ -85,10 +85,14 @@ const EcomAgentDashboard: React.FC = () => {
         conversation_history: newHistory
       });
       
+      // Clean markdown formatting (remove ** for bold)
+      const cleanedResponse = response.data.response.replace(/\*\*/g, '');
+      
       setChatHistory([...newHistory, { 
         role: 'bot', 
-        message: response.data.response,
-        sources: response.data.sources 
+        message: cleanedResponse,
+        sources: response.data.sources,
+        hasData: response.data.data_context_size > 1000 // Flag for potential chart data
       }]);
     } catch (error) {
       console.error('Error chatting with ecom agent:', error);
