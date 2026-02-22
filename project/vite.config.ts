@@ -8,6 +8,10 @@ export default defineConfig({
     host: true, // Listen on all addresses
     port: 3000,
     strictPort: true,
+    allowedHosts: [
+      '.preview.emergentagent.com',
+      '.preview.emergentcf.cloud',
+    ],
     hmr: {
       clientPort: 443,
       protocol: 'wss',
