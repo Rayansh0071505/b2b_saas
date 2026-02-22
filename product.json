@@ -1,0 +1,119 @@
+{
+  "products": [
+    {
+      "id": "PROD-001",
+      "name": "Wireless Bluetooth Headphones",
+      "category": "Electronics",
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 150,
+      "description": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and superior sound quality.",
+      "features": [
+        "Active Noise Cancellation",
+        "30-hour battery life",
+        "Bluetooth 5.0",
+        "Foldable design",
+        "Built-in microphone"
+      ],
+      "warranty": "2 years",
+      "rating": 4.5,
+      "reviews_count": 1247
+    },
+    {
+      "id": "PROD-002",
+      "name": "Smart Fitness Watch",
+      "category": "Wearables",
+      "price": 199.99,
+      "currency": "USD",
+      "stock": 89,
+      "description": "Track your fitness goals with heart rate monitoring, GPS, and 50+ workout modes. Water-resistant up to 50m.",
+      "features": [
+        "Heart rate monitor",
+        "Built-in GPS",
+        "50+ workout modes",
+        "5-day battery life",
+        "Water-resistant (50m)",
+        "Sleep tracking"
+      ],
+      "warranty": "1 year",
+      "rating": 4.7,
+      "reviews_count": 892
+    },
+    {
+      "id": "PROD-003",
+      "name": "Ergonomic Office Chair",
+      "category": "Furniture",
+      "price": 299.99,
+      "currency": "USD",
+      "stock": 45,
+      "description": "Premium ergonomic office chair with lumbar support, adjustable armrests, and breathable mesh back.",
+      "features": [
+        "Lumbar support",
+        "Adjustable height",
+        "360-degree swivel",
+        "Breathable mesh",
+        "Weight capacity: 300 lbs"
+      ],
+      "warranty": "5 years",
+      "rating": 4.8,
+      "reviews_count": 534
+    },
+    {
+      "id": "PROD-004",
+      "name": "4K Ultra HD Webcam",
+      "category": "Electronics",
+      "price": 129.99,
+      "currency": "USD",
+      "stock": 200,
+      "description": "Professional 4K webcam with auto-focus, built-in ring light, and dual microphones for crystal-clear video calls.",
+      "features": [
+        "4K resolution",
+        "Auto-focus",
+        "Built-in ring light",
+        "Dual microphones",
+        "Wide-angle lens (90°)"
+      ],
+      "warranty": "1 year",
+      "rating": 4.6,
+      "reviews_count": 678
+    },
+    {
+      "id": "PROD-005",
+      "name": "Organic Green Tea Set",
+      "category": "Food & Beverages",
+      "price": 24.99,
+      "currency": "USD",
+      "stock": 320,
+      "description": "Premium organic green tea collection with 5 different varieties. 100 tea bags total.",
+      "features": [
+        "100% organic",
+        "5 varieties included",
+        "100 tea bags",
+        "Antioxidant-rich",
+        "No artificial flavors"
+      ],
+      "warranty": "N/A",
+      "rating": 4.4,
+      "reviews_count": 2103
+    },
+    {
+      "id": "PROD-006",
+      "name": "Portable Phone Charger 20000mAh",
+      "category": "Electronics",
+      "price": 39.99,
+      "currency": "USD",
+      "stock": 175,
+      "description": "High-capacity portable charger with fast charging, dual USB ports, and LED display.",
+      "features": [
+        "20000mAh capacity",
+        "Fast charging (18W)",
+        "Dual USB ports",
+        "LED battery display",
+        "Compact design"
+      ],
+      "warranty": "18 months",
+      "rating": 4.5,
+      "reviews_count": 1456
+    }
+  ]
+}
