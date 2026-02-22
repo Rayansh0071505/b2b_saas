@@ -59,6 +59,16 @@ const EmailDashboard: React.FC = () => {
   const [selectedEmail, setSelectedEmail] = useState<Email | null>(null);
   const [activeView, setActiveView] = useState<'emails' | 'train' | 'stats'>('emails');
   const [filterSentiment, setFilterSentiment] = useState<string>('all');
+  
+  // Bot training states
+  const [trainView, setTrainView] = useState<'knowledge' | 'instructions' | 'connectors'>('knowledge');
+  const [knowledgeBase, setKnowledgeBase] = useState<string>('');
+  const [botInstructions, setBotInstructions] = useState<string>('');
+  const [connectors, setConnectors] = useState<any[]>([]);
+  const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+  const [chatMessage, setChatMessage] = useState<string>('');
+  const [chatHistory, setChatHistory] = useState<Array<{role: string, message: string}>>([]);
+  const [isChatting, setIsChatting] = useState<boolean>(false);
 
   useEffect(() => {
     fetchEmails();
