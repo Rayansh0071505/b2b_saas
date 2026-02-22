@@ -1,48 +1,57 @@
 {
   "website_overview": {
-    "total_users": 45678,
-    "total_sessions": 89234,
-    "bounce_rate": "42.3%",
-    "avg_session_duration": "3m 24s",
-    "pages_per_session": 4.2,
-    "new_users": 32145,
-    "returning_users": 13533
+    "total_users": 125678,
+    "total_sessions": 289234,
+    "bounce_rate": "38.7%",
+    "avg_session_duration": "4m 18s",
+    "pages_per_session": 5.6,
+    "new_users": 89145,
+    "returning_users": 36533,
+    "pageviews": 1623456,
+    "unique_pageviews": 945678
   },
   "traffic_sources": [
     {
       "source": "Organic Search",
-      "users": 18234,
-      "sessions": 34567,
-      "bounce_rate": "38.2%",
-      "conversion_rate": "3.8%"
+      "users": 48234,
+      "sessions": 94567,
+      "bounce_rate": "34.2%",
+      "conversion_rate": "4.8%"
     },
     {
       "source": "Direct",
-      "users": 12456,
-      "sessions": 23456,
-      "bounce_rate": "35.6%",
-      "conversion_rate": "4.2%"
-    },
-    {
-      "source": "Social Media",
-      "users": 8901,
-      "sessions": 16789,
-      "bounce_rate": "52.1%",
-      "conversion_rate": "2.1%"
-    },
-    {
-      "source": "Paid Search",
-      "users": 4567,
-      "sessions": 9876,
-      "bounce_rate": "41.3%",
+      "users": 32456,
+      "sessions": 63456,
+      "bounce_rate": "31.6%",
       "conversion_rate": "5.2%"
     },
     {
+      "source": "Social Media",
+      "users": 23901,
+      "sessions": 46789,
+      "bounce_rate": "48.1%",
+      "conversion_rate": "3.1%"
+    },
+    {
+      "source": "Paid Search",
+      "users": 14567,
+      "sessions": 29876,
+      "bounce_rate": "37.3%",
+      "conversion_rate": "6.2%"
+    },
+    {
       "source": "Referral",
-      "users": 1520,
-      "sessions": 4546,
-      "bounce_rate": "45.8%",
-      "conversion_rate": "2.9%"
+      "users": 5520,
+      "sessions": 14546,
+      "bounce_rate": "41.8%",
+      "conversion_rate": "3.9%"
+    },
+    {
+      "source": "Email",
+      "users": 890,
+      "sessions": 4000,
+      "bounce_rate": "28.5%",
+      "conversion_rate": "7.8%"
     }
   ],
   "top_pages": [
@@ -76,12 +85,12 @@
     }
   ],
   "conversions": {
-    "goal_completions": 1876,
-    "goal_value": 248950,
-    "ecommerce_transactions": 456,
-    "ecommerce_revenue": 87654,
-    "avg_order_value": 192.21,
-    "conversion_rate": "3.4%"
+    "goal_completions": 5876,
+    "goal_value": 748950,
+    "ecommerce_transactions": 1456,
+    "ecommerce_revenue": 287654,
+    "avg_order_value": 197.56,
+    "conversion_rate": "5.1%"
   },
   "demographics": {
     "age_groups": [
