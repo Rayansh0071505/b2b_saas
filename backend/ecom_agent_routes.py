@@ -15,8 +15,11 @@ logger = logging.getLogger(__name__)
 
 ecom_agent_router = APIRouter()
 
-# Emergent LLM API key
-EMERGENT_LLM_KEY = os.getenv("EMERGENT_LLM_KEY", "sk-emergent-e6cC403A7332fC34cA")
+# Emergent LLM API key (required)
+EMERGENT_LLM_KEY = os.getenv("EMERGENT_LLM_KEY")
+if not EMERGENT_LLM_KEY:
+    logger.error("EMERGENT_LLM_KEY environment variable is required")
+    raise ValueError("EMERGENT_LLM_KEY must be set in environment variables")
 
 # Load all data sources
 def load_all_data_sources():
