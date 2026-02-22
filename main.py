@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.routes import sentiment_router
+from backend.bot_routes import bot_router
 
-app = FastAPI(title="B2B Sentiment Analysis API")
+app = FastAPI(title="Saturnin AI Platform API")
 
 # CORS middleware
 app.add_middleware(
@@ -15,30 +16,33 @@ app.add_middleware(
 
 # Include routers with /api prefix
 app.include_router(sentiment_router, prefix="/api")
+app.include_router(bot_router, prefix="/api")
 
 @app.get("/")
 async def root():
     return {
-        "message": "B2B Sentiment Analysis API",
-        "version": "1.0",
+        "message": "Saturnin AI Platform API",
+        "version": "2.0",
+        "platform": "Saturnin",
         "endpoints": {
-            "companies": "/api/companies",
-            "reports": "/api/report/*",
-            "reviews": "/api/reviews",
-            "shopify": "/api/shopify_insights"
+            "sentiment": "/api/companies, /api/report/*, /api/reviews",
+            "bot_training": "/api/bot/knowledge-base, /api/bot/instructions",
+            "bot_chat": "/api/bot/chat",
+            "connectors": "/api/bot/connectors/*"
         }
     }
 
 @app.get("/api")
 async def api_root():
     return {
-        "message": "B2B Sentiment Analysis API",
-        "version": "1.0",
+        "message": "Saturnin AI Platform API",
+        "version": "2.0",
+        "platform": "Saturnin",
         "endpoints": {
-            "companies": "/api/companies",
-            "reports": "/api/report/*",
-            "reviews": "/api/reviews",
-            "shopify": "/api/shopify_insights"
+            "sentiment": "/api/companies, /api/report/*, /api/reviews",
+            "bot_training": "/api/bot/knowledge-base, /api/bot/instructions",
+            "bot_chat": "/api/bot/chat",
+            "connectors": "/api/bot/connectors/*"
         }
     }
 
