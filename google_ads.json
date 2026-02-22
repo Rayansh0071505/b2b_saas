@@ -1,0 +1,283 @@
+{
+  "campaigns": [
+    {
+      "campaign_id": "GOOGLE-2024-001",
+      "campaign_name": "Search - Product Keywords",
+      "campaign_type": "Search",
+      "status": "active",
+      "start_date": "2024-01-20",
+      "end_date": "2024-04-20",
+      "budget": {
+        "total": 18000,
+        "daily": 200,
+        "spent": 9800,
+        "remaining": 8200
+      },
+      "bidding_strategy": "Maximize conversions",
+      "ad_groups": [
+        {
+          "ad_group_id": "AG-001",
+          "name": "Fitness Watch Keywords",
+          "keywords": [
+            "best fitness watch 2024",
+            "smart fitness tracker",
+            "waterproof fitness watch",
+            "gps fitness watch"
+          ],
+          "impressions": 125678,
+          "clicks": 3456,
+          "ctr": "2.75%",
+          "avg_cpc": "$2.84",
+          "conversions": 98,
+          "conversion_rate": "2.84%",
+          "cost_per_conversion": "$100.00",
+          "roas": "3.2"
+        },
+        {
+          "ad_group_id": "AG-002",
+          "name": "Wireless Headphones",
+          "keywords": [
+            "noise cancelling headphones",
+            "bluetooth wireless headphones",
+            "best headphones 2024",
+            "wireless earbuds"
+          ],
+          "impressions": 98456,
+          "clicks": 2678,
+          "ctr": "2.72%",
+          "avg_cpc": "$2.15",
+          "conversions": 72,
+          "conversion_rate": "2.69%",
+          "cost_per_conversion": "$80.25",
+          "roas": "4.5"
+        }
+      ],
+      "performance": {
+        "impressions": 224134,
+        "clicks": 6134,
+        "ctr": "2.74%",
+        "avg_cpc": "$2.52",
+        "conversions": 170,
+        "conversion_rate": "2.77%",
+        "cost": 15458,
+        "revenue": 54000,
+        "roas": "3.5"
+      },
+      "top_performing_keywords": [
+        {
+          "keyword": "best fitness watch 2024",
+          "match_type": "phrase",
+          "impressions": 45678,
+          "clicks": 1234,
+          "ctr": "2.70%",
+          "conversions": 42,
+          "quality_score": 8
+        },
+        {
+          "keyword": "noise cancelling headphones",
+          "match_type": "exact",
+          "impressions": 32456,
+          "clicks": 987,
+          "ctr": "3.04%",
+          "conversions": 35,
+          "quality_score": 9
+        }
+      ]
+    },
+    {
+      "campaign_id": "GOOGLE-2024-002",
+      "campaign_name": "Shopping - Product Catalog",
+      "campaign_type": "Shopping",
+      "status": "active",
+      "start_date": "2024-02-01",
+      "end_date": "2024-05-01",
+      "budget": {
+        "total": 25000,
+        "daily": 278,
+        "spent": 13200,
+        "remaining": 11800
+      },
+      "bidding_strategy": "Target ROAS",
+      "target_roas": "400%",
+      "product_groups": [
+        {
+          "product_group_id": "PG-001",
+          "name": "Electronics - Wearables",
+          "products_count": 8,
+          "impressions": 156789,
+          "clicks": 4567,
+          "ctr": "2.91%",
+          "avg_cpc": "$1.88",
+          "conversions": 142,
+          "conversion_rate": "3.11%",
+          "roas": "4.8"
+        },
+        {
+          "product_group_id": "PG-002",
+          "name": "Electronics - Audio",
+          "products_count": 12,
+          "impressions": 98765,
+          "clicks": 2987,
+          "ctr": "3.02%",
+          "avg_cpc": "$1.65",
+          "conversions": 89,
+          "conversion_rate": "2.98%",
+          "roas": "5.2"
+        }
+      ],
+      "performance": {
+        "impressions": 255554,
+        "clicks": 7554,
+        "ctr": "2.96%",
+        "avg_cpc": "$1.75",
+        "conversions": 231,
+        "conversion_rate": "3.06%",
+        "cost": 13220,
+        "revenue": 62580,
+        "roas": "4.7"
+      },
+      "top_products": [
+        {
+          "product_id": "PROD-002",
+          "product_name": "Smart Fitness Watch",
+          "impressions": 45678,
+          "clicks": 1456,
+          "conversions": 52,
+          "revenue": 10400,
+          "roas": "5.8"
+        },
+        {
+          "product_id": "PROD-001",
+          "product_name": "Wireless Bluetooth Headphones",
+          "impressions": 38965,
+          "clicks": 1234,
+          "conversions": 48,
+          "revenue": 3840,
+          "roas": "6.2"
+        }
+      ]
+    },
+    {
+      "campaign_id": "GOOGLE-2024-003",
+      "campaign_name": "Display - Remarketing",
+      "campaign_type": "Display",
+      "status": "active",
+      "start_date": "2024-02-05",
+      "end_date": "2024-04-05",
+      "budget": {
+        "total": 12000,
+        "daily": 200,
+        "spent": 6800,
+        "remaining": 5200
+      },
+      "bidding_strategy": "Target CPA",
+      "target_cpa": "$75",
+      "audiences": [
+        {
+          "audience_id": "AUD-001",
+          "name": "Website Visitors - 30 Days",
+          "size": 125000,
+          "impressions": 234567,
+          "clicks": 3456,
+          "ctr": "1.47%",
+          "conversions": 78,
+          "conversion_rate": "2.26%",
+          "cost_per_conversion": "$87.18"
+        },
+        {
+          "audience_id": "AUD-002",
+          "name": "Cart Abandoners",
+          "size": 45000,
+          "impressions": 98765,
+          "clicks": 1987,
+          "ctr": "2.01%",
+          "conversions": 52,
+          "conversion_rate": "2.62%",
+          "cost_per_conversion": "$65.38"
+        }
+      ],
+      "performance": {
+        "impressions": 333332,
+        "clicks": 5443,
+        "ctr": "1.63%",
+        "avg_cpc": "$1.25",
+        "conversions": 130,
+        "conversion_rate": "2.39%",
+        "cost": 6804,
+        "revenue": 16900,
+        "roas": "2.5"
+      },
+      "top_creatives": [
+        {
+          "creative_id": "DC-001",
+          "size": "300x250",
+          "type": "responsive_display_ad",
+          "impressions": 125678,
+          "clicks": 2345,
+          "ctr": "1.87%",
+          "conversions": 58
+        }
+      ]
+    },
+    {
+      "campaign_id": "GOOGLE-2024-004",
+      "campaign_name": "Video - YouTube Ads",
+      "campaign_type": "Video",
+      "status": "active",
+      "start_date": "2024-01-25",
+      "end_date": "2024-03-25",
+      "budget": {
+        "total": 15000,
+        "daily": 250,
+        "spent": 9500,
+        "remaining": 5500
+      },
+      "bidding_strategy": "Maximum CPV",
+      "max_cpv": "$0.15",
+      "ad_formats": [
+        {
+          "format": "skippable_in_stream",
+          "impressions": 567890,
+          "views": 123456,
+          "view_rate": "21.75%",
+          "avg_cpv": "$0.077",
+          "conversions": 45,
+          "cost": 9500,
+          "engagement_rate": "8.5%"
+        }
+      ],
+      "performance": {
+        "impressions": 567890,
+        "views": 123456,
+        "view_rate": "21.75%",
+        "avg_cpv": "$0.077",
+        "earned_views": 34567,
+        "earned_actions": 2345,
+        "conversions": 45,
+        "cost": 9500,
+        "revenue": 8950,
+        "roas": "0.94"
+      },
+      "top_videos": [
+        {
+          "video_id": "VID-001",
+          "title": "Fitness Watch Pro - Features Overview",
+          "duration": "30 seconds",
+          "views": 67890,
+          "view_rate": "28.5%",
+          "avg_watch_time": "22 seconds"
+        }
+      ]
+    }
+  ],
+  "overall_performance": {
+    "total_spend": 39280,
+    "total_revenue": 142430,
+    "overall_roas": "3.6",
+    "total_conversions": 576,
+    "avg_conversion_rate": "2.81%",
+    "total_impressions": 1380910,
+    "total_clicks": 19131,
+    "avg_ctr": "2.17%"
+  }
+}

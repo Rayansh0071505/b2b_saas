@@ -1,0 +1,196 @@
+{
+  "campaigns": [
+    {
+      "campaign_id": "META-2024-001",
+      "campaign_name": "Spring Collection Launch",
+      "platform": "Facebook",
+      "status": "active",
+      "objective": "conversions",
+      "start_date": "2024-02-01",
+      "end_date": "2024-03-31",
+      "budget": {
+        "total": 15000,
+        "daily": 500,
+        "spent": 8500,
+        "remaining": 6500
+      },
+      "targeting": {
+        "age_range": "25-45",
+        "gender": "all",
+        "locations": ["United States", "Canada", "United Kingdom"],
+        "interests": ["Fitness", "Health & Wellness", "Technology", "Shopping"],
+        "behaviors": ["Online shoppers", "Engaged shoppers"]
+      },
+      "ad_sets": [
+        {
+          "ad_set_id": "AS-001",
+          "name": "Fitness Watch - Lookalike Audience",
+          "budget": 300,
+          "impressions": 156789,
+          "clicks": 3421,
+          "ctr": "2.18%",
+          "conversions": 89,
+          "cost_per_conversion": "$33.71",
+          "roas": "4.2"
+        },
+        {
+          "ad_set_id": "AS-002",
+          "name": "Headphones - Interest Targeting",
+          "budget": 200,
+          "impressions": 98456,
+          "clicks": 2156,
+          "ctr": "2.19%",
+          "conversions": 52,
+          "cost_per_conversion": "$38.46",
+          "roas": "3.8"
+        }
+      ],
+      "performance": {
+        "impressions": 255245,
+        "reach": 187653,
+        "clicks": 5577,
+        "ctr": "2.18%",
+        "conversions": 141,
+        "conversion_rate": "2.53%",
+        "cost_per_click": "$1.52",
+        "cost_per_conversion": "$60.28",
+        "revenue": 17892,
+        "roas": "4.1"
+      },
+      "top_creatives": [
+        {
+          "creative_id": "CR-001",
+          "type": "carousel",
+          "format": "image",
+          "description": "Product showcase with 5 images",
+          "performance": "Best performing - 45% of conversions"
+        },
+        {
+          "creative_id": "CR-002",
+          "type": "video",
+          "format": "video",
+          "description": "30-second product demo",
+          "performance": "High engagement - 8.2% video completion rate"
+        }
+      ]
+    },
+    {
+      "campaign_id": "META-2024-002",
+      "campaign_name": "Instagram Retargeting Campaign",
+      "platform": "Instagram",
+      "status": "active",
+      "objective": "conversions",
+      "start_date": "2024-02-10",
+      "end_date": "2024-03-10",
+      "budget": {
+        "total": 8000,
+        "daily": 267,
+        "spent": 5200,
+        "remaining": 2800
+      },
+      "targeting": {
+        "age_range": "18-35",
+        "gender": "all",
+        "locations": ["United States"],
+        "custom_audiences": ["Website visitors (30 days)", "Cart abandoners", "Product page viewers"],
+        "placement": ["Instagram Feed", "Instagram Stories", "Instagram Reels"]
+      },
+      "ad_sets": [
+        {
+          "ad_set_id": "AS-003",
+          "name": "Cart Abandoners - Dynamic Retargeting",
+          "budget": 150,
+          "impressions": 78456,
+          "clicks": 2341,
+          "ctr": "2.98%",
+          "conversions": 76,
+          "cost_per_conversion": "$102.63",
+          "roas": "2.9"
+        }
+      ],
+      "performance": {
+        "impressions": 78456,
+        "reach": 45623,
+        "clicks": 2341,
+        "ctr": "2.98%",
+        "conversions": 76,
+        "conversion_rate": "3.25%",
+        "cost_per_click": "$2.22",
+        "cost_per_conversion": "$68.42",
+        "revenue": 11280,
+        "roas": "2.2"
+      },
+      "top_creatives": [
+        {
+          "creative_id": "CR-003",
+          "type": "stories",
+          "format": "image",
+          "description": "Limited time offer with countdown",
+          "performance": "Highest CTR - 3.8%"
+        }
+      ]
+    },
+    {
+      "campaign_id": "META-2024-003",
+      "campaign_name": "Brand Awareness - Video Campaign",
+      "platform": "Facebook",
+      "status": "active",
+      "objective": "brand_awareness",
+      "start_date": "2024-01-15",
+      "end_date": "2024-04-15",
+      "budget": {
+        "total": 20000,
+        "daily": 222,
+        "spent": 12500,
+        "remaining": 7500
+      },
+      "targeting": {
+        "age_range": "21-55",
+        "gender": "all",
+        "locations": ["United States", "Canada"],
+        "interests": ["Consumer electronics", "Fitness equipment", "Wellness"],
+        "placement": ["Facebook Feed", "Facebook Video Feeds", "Instagram Feed"]
+      },
+      "ad_sets": [
+        {
+          "ad_set_id": "AS-004",
+          "name": "Brand Story - Video Views",
+          "budget": 222,
+          "impressions": 456789,
+          "video_views": 89456,
+          "avg_watch_time": "18 seconds",
+          "engagement_rate": "6.2%",
+          "cost_per_video_view": "$0.14"
+        }
+      ],
+      "performance": {
+        "impressions": 456789,
+        "reach": 298456,
+        "video_views": 89456,
+        "video_completion_rate": "45%",
+        "engagement_rate": "6.2%",
+        "cost_per_1000_impressions": "$27.35",
+        "brand_lift": "+12% brand recall"
+      },
+      "top_creatives": [
+        {
+          "creative_id": "CR-004",
+          "type": "video",
+          "format": "video",
+          "description": "Customer testimonial compilation - 60 seconds",
+          "performance": "80% completion rate"
+        }
+      ]
+    }
+  ],
+  "overall_performance": {
+    "total_spend": 26200,
+    "total_revenue": 29172,
+    "overall_roas": "3.5",
+    "total_conversions": 217,
+    "avg_conversion_rate": "2.65%",
+    "total_impressions": 790490,
+    "total_clicks": 7918,
+    "avg_ctr": "2.31%"
+  }
+}

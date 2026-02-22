@@ -1,0 +1,148 @@
+{
+  "strategies": [
+    {
+      "id": "STRAT-001",
+      "title": "Holiday Season Marketing Campaign",
+      "category": "seasonal",
+      "status": "active",
+      "date_created": "2024-01-15",
+      "goals": [
+        "Increase sales by 40% during Q4",
+        "Boost customer acquisition by 25%",
+        "Improve email open rates to 35%"
+      ],
+      "tactics": [
+        "Launch Black Friday/Cyber Monday flash sales",
+        "Create gift guides and bundles",
+        "Implement abandoned cart email sequences",
+        "Run retargeting campaigns on Meta and Google"
+      ],
+      "budget": 50000,
+      "expected_roi": "250%",
+      "channels": ["email", "social_media", "paid_ads", "seo"],
+      "target_audience": "Existing customers and warm leads",
+      "key_metrics": {
+        "conversion_rate_target": "4.5%",
+        "avg_order_value_target": "$85",
+        "customer_lifetime_value": "$320"
+      },
+      "notes": "Focus on personalization and urgency. Use countdown timers and limited stock notifications."
+    },
+    {
+      "id": "STRAT-002",
+      "title": "Customer Retention & Loyalty Program",
+      "category": "retention",
+      "status": "active",
+      "date_created": "2024-02-01",
+      "goals": [
+        "Reduce churn rate by 20%",
+        "Increase repeat purchase rate to 45%",
+        "Build brand advocates with 5000+ loyalty members"
+      ],
+      "tactics": [
+        "Launch points-based loyalty program",
+        "Implement VIP tiers with exclusive perks",
+        "Monthly personalized product recommendations",
+        "Birthday and anniversary special offers",
+        "Referral program with dual rewards"
+      ],
+      "budget": 30000,
+      "expected_roi": "180%",
+      "channels": ["email", "app", "sms"],
+      "target_audience": "Repeat customers with 2+ purchases",
+      "key_metrics": {
+        "repeat_purchase_rate": "45%",
+        "average_loyalty_member_ltv": "$450",
+        "referral_conversion_rate": "12%"
+      },
+      "notes": "Gamification elements perform well. Consider surprise rewards for top customers."
+    },
+    {
+      "id": "STRAT-003",
+      "title": "Content Marketing & SEO Growth",
+      "category": "organic_growth",
+      "status": "active",
+      "date_created": "2024-01-10",
+      "goals": [
+        "Increase organic traffic by 60%",
+        "Rank for 50+ high-intent keywords",
+        "Generate 200+ backlinks from authority sites"
+      ],
+      "tactics": [
+        "Publish 3 in-depth blog posts per week",
+        "Create product comparison guides",
+        "Develop interactive tools and calculators",
+        "Guest posting on industry blogs",
+        "Video content for YouTube and social"
+      ],
+      "budget": 25000,
+      "expected_roi": "320%",
+      "channels": ["blog", "youtube", "pinterest", "linkedin"],
+      "target_audience": "Top-of-funnel prospects researching products",
+      "key_metrics": {
+        "organic_traffic_growth": "60%",
+        "keyword_rankings_top_10": 50,
+        "content_conversion_rate": "2.8%"
+      },
+      "notes": "Long-form content (2000+ words) performs best. Focus on solution-oriented articles."
+    },
+    {
+      "id": "STRAT-004",
+      "title": "Influencer Partnership Campaign",
+      "category": "partnership",
+      "status": "planning",
+      "date_created": "2024-02-10",
+      "goals": [
+        "Partner with 20 micro-influencers",
+        "Generate 500K impressions",
+        "Drive 2000+ sales through affiliate links"
+      ],
+      "tactics": [
+        "Identify influencers in fitness and wellness niche",
+        "Provide free products for authentic reviews",
+        "Create unique discount codes for each influencer",
+        "Run giveaway campaigns",
+        "Develop UGC content library"
+      ],
+      "budget": 40000,
+      "expected_roi": "200%",
+      "channels": ["instagram", "tiktok", "youtube"],
+      "target_audience": "18-35 year old health-conscious consumers",
+      "key_metrics": {
+        "engagement_rate_target": "4.5%",
+        "affiliate_conversion_rate": "6%",
+        "ugc_content_pieces": 150
+      },
+      "notes": "Prioritize long-term partnerships over one-off posts. Authenticity is key."
+    },
+    {
+      "id": "STRAT-005",
+      "title": "Product Launch Strategy - Fitness Watch Pro",
+      "category": "product_launch",
+      "status": "active",
+      "date_created": "2024-02-18",
+      "goals": [
+        "Achieve 1000 pre-orders",
+        "Generate 100K+ email signups",
+        "Create buzz with 50+ media mentions"
+      ],
+      "tactics": [
+        "Teaser campaign with countdown",
+        "Early bird discount for first 500 customers",
+        "Press release to tech and fitness media",
+        "Product demo videos and unboxing",
+        "Launch event livestream"
+      ],
+      "budget": 35000,
+      "expected_roi": "280%",
+      "channels": ["email", "social_media", "pr", "paid_ads"],
+      "target_audience": "Tech enthusiasts and fitness trackers",
+      "key_metrics": {
+        "pre_order_conversion_rate": "8%",
+        "email_list_growth": "100K+",
+        "media_coverage_reach": "2M+"
+      },
+      "notes": "Create FOMO with limited quantities. Emphasize unique features and benefits."
+    }
+  ]
+}
